@@ -1,0 +1,37 @@
+@theme {
+    /* Fonts */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Colors */
+    --color-text: #454545;
+    --color-dark: #0a1929;
+    --color-primary: #006ea1;
+    --color-accent: #ff9957;
+	 --color-accent-hover: #FFAD78;
+    --color-danger: #F04131;
+    --color-danger-light: #f4e5e5;
+    --color-success: #1daa22;
+    --color-success-light: #e5f4e6;
+    --color-warning: #f5a800;
+    --color-warning-light: #f4f1e5;
+    --color-border: #e1e5ee;
+    --color-white: #fff;
+	 --color-body: #f3f9fb;
+	 --color-substrate: #e6f1f5;
+
+	 /* text sizes */
+	 --text-3xs: 8px;
+	 --text-2xs: 10px;
+
+
+	 /* gradients */
+
+	 --background-image-badge-new: radial-gradient(90.57% 107.71% at 62.66% 45.79%, #e5aebc 0%, #c9b1dd 46.23%, #d4b4e8 100%);
+	 --background-image-badge-promo: radial-gradient(90.57% 107.71% at 62.66% 45.79%, #e5daae 0%, #ddb1d2 46.23%, #e8d2b4 100%);
+
+	 /* shadows */
+	 --shadow-menu: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 7px 7px 0 rgba(0, 0, 0, 0.04), 0 17px 10px 0 rgba(0, 0, 0, 0.03), 0 29px 12px 0 rgba(0, 0, 0, 0.01), 0 46px 13px 0 rgba(0, 0, 0, 0);
+	 --shadow-pagination: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 7px 7px 0 rgba(0, 0, 0, 0.04);
+	 --shadow-dropdown: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 7px 7px 0 rgba(0, 0, 0, 0.04), 0 17px 10px 0 rgba(0, 0, 0, 0.03), 0 29px 12px 0 rgba(0, 0, 0, 0.01), 0 46px 13px 0 rgba(0, 0, 0, 0);
+}

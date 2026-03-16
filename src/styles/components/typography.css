@@ -1,0 +1,5 @@
+@layer components {
+	.section-title {
+		@apply font-bold text-lg leading-5.5 text-dark;
+	}
+}

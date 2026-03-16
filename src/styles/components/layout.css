@@ -1,0 +1,30 @@
+@layer components {
+	.skip-link {
+		@apply absolute -top-12 left-0 z-50 bg-gray-900 text-white px-4 py-2 text-sm font-medium;
+		transition: top 0.2s;
+	}
+
+	.skip-link:focus {
+		@apply top-0;
+	}
+
+	.below-fold-section {
+		content-visibility: auto;
+		contain-intrinsic-size: 0 400px;
+	}
+
+
+	/* Page container */
+
+	.container {
+		@apply w-full max-w-[1422px]! px-4 mx-auto;
+	}
+
+	/* Page wrapper */
+
+
+	.page-wrapper {
+		@apply pt-4 pb-7.5 md:pt-7.5 md:pb-15;
+	}
+
+}

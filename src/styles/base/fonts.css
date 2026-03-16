@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterSemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/fonts/InterBlack.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0400-04FF;
+}

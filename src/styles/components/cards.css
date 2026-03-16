@@ -1,0 +1,43 @@
+@layer components {
+
+	.card {
+		@apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200;
+	}
+
+
+	/* Blog card */
+
+	.blog-card {
+		@apply relative;
+	}
+
+	.blog-card__img {
+		@apply aspect-16/9;
+		img {
+			@apply w-full h-full rounded-2xl object-cover;
+		}
+	}
+
+	.blog-card__content {
+		@apply pt-5;
+		p {
+			@apply mb-2.5 line-clamp-2 text-xs leading-5;
+		}
+	}
+
+	.blog-card__date {
+		@apply text-sm leading-6 mb-2.5 block;
+	}
+
+	.blog-card__title {
+		@apply font-semibold text-base leading-4.75 text-dark mb-2;
+		a::after {
+			@apply content-[''] absolute inset-0 z-0;
+		}
+	}
+
+	.blog-card__btn {
+		@apply relative z-1;
+	}
+
+}

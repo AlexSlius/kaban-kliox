@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+
+@import "./components/header.css";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/forms.css";
+@import "./components/layout.css";
+@import "./components/navigation.css";
+@import "./components/typography.css";
+
+@layer base {
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    body {
+			font-family: var(--font-sans);
+			color: var(--color-text);
+			margin: 0;
+			font-size: 14px;
+			line-height: 1.43;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-text-size-adjust: 100%;
+    }
+
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* a, button, [role="button"], input, select, textarea {
+        min-height: 48px;
+    } */
+
+    :focus-visible {
+		  @apply outline-accent outline-2 outline-offset-2;
+    }
+
+    /* input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+        @apply outline-0;
+    } */
+
+    .sr-only {
+        @apply absolute w-px h-px overflow-hidden whitespace-nowrap;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        padding: 0;
+        margin: -1px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

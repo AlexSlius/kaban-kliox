@@ -1,0 +1,109 @@
+@layer components {
+
+	/* Breadcrumbs */
+	.breadcrumb {
+		@apply flex items-center flex-wrap text-xs leading-3.75 text-dark gap-1 mb-3.75;
+	}
+
+	.breadcrumb__separator {
+		@apply select-none;
+	}
+
+	.breadcrumb__link {
+		@apply hover:text-accent transition-colors;
+	}
+
+	.breadcrumb__current {
+		@apply text-text;
+	}
+
+	/* Pagination */
+
+	.pagination {
+		@apply flex rounded-[5px] h-10.5 w-fit bg-white shadow-pagination;
+	}
+
+	.pagination__item {
+		@apply w-9.5 flex items-center justify-center text-base text-dark border-r border-border last:border-r-0 transition-all hover:bg-accent;
+	}
+
+	.pagination__item--active {
+		@apply bg-accent;
+	}
+
+	.pagination__btn {
+		@apply w-14 flex items-center justify-center text-dark border-r border-border last:border-r-0 transition-all hover:bg-accent first:rounded-l-[5px] last:rounded-r-[5px];
+	}
+
+	/* Lang switcher */
+
+	.lang-switcher {
+		@apply inline-flex items-center gap-1.25;
+	}
+
+	.lang-switcher__item {
+		@apply text-xs transition-colors md:text-sm;
+		&:not(.lang-switcher__item--active):hover {
+			@apply text-accent;
+		}
+	}
+
+	.lang-switcher__item--active {
+		@apply font-bold text-dark;
+	}
+
+	.lang-switcher__divider {
+		@apply w-px h-3.5 bg-border;
+	}
+
+	/* Main nav */
+
+
+	.main-nav__burger {
+		span {
+			@apply bg-dark w-5 h-0.5 transition-all;
+		}
+	}
+
+	.main-nav__list {
+		@apply flex;
+		> li {
+			@apply grow;
+			&:hover {
+				.main-nav__burger {
+					span {
+						@apply bg-accent;
+						&:first-child {
+							@apply w-2.5;
+						}
+						&:nth-child(2) {
+							@apply w-4;
+						}
+					}
+				}
+				> a, button {
+					@apply text-accent;
+					svg {
+						&:last-child {
+							@apply rotate-180;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-nav__link {
+		@apply flex items-center justify-center w-full cursor-pointer font-semibold gap-1.25 text-dark py-3.5 transition-colors border-r last:border-r-0 border-r-[#cedde3];
+	}
+
+	/* Footer menu */
+
+	.footer-nav__link {
+		@apply block w-fit text-white text-sm leading-4.5 mb-2.25 hover:text-accent transition-colors;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+}
