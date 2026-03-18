@@ -18,14 +18,13 @@ function preload() {
 }
 
 export function initModal() {
-    // Desktop: preload при наведении на триггер
+
     document.addEventListener('pointerover', (e) => {
         if (e.pointerType === 'mouse' && e.target.closest('[data-fancybox-inline]')) {
             preload();
         }
     }, { passive: true });
 
-    // Клик: перехватываем только если Fancybox ещё не готов
     document.addEventListener('click', async (e) => {
         if (modalReady) return;
         const trigger = e.target.closest('[data-fancybox-inline]');

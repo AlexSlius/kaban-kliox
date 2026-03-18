@@ -10,7 +10,6 @@ import { existsSync } from 'fs';
 
 const SUPPORTED = ['.jpg', '.jpeg', '.png'];
 
-// Пресеты нарезки по типу контента
 const PRESETS = {
     thumbnail: { widths: [160, 320, 480] },
     card:      { widths: [320, 640, 960], ratio: [16, 9] },
