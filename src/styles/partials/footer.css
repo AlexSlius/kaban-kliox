@@ -1,0 +1,30 @@
+@layer components {
+
+	/* Footer nav title */
+
+	.footer-nav__title {
+		@apply text-accent font-semibold text-base leading-4.75 mb-5.25 xl:text-lg xl:leading-5.5;
+	}
+
+	/* Footer nav link */
+
+	.footer-nav__link {
+		@apply block w-fit text-white text-sm leading-4.5 mb-2.25 hover:text-accent transition-colors xl:text-base xl:mb-3.25;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	/* Footer contact link */
+
+	.footer-contact__link {
+		@apply flex w-fit items-center gap-2.5 hover:text-accent transition-colors;
+		svg {
+			@apply xl:w-6.75 xl:h-6.75;
+		}
+		span {
+			@apply font-bold leading-5 text-base xl:text-[22px];
+		}
+	}
+
+}

@@ -1,27 +1,22 @@
 @layer components {
 
-	.card {
-		@apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-200;
-	}
-
-
 	/* Blog card */
 
 	.blog-card {
-		@apply relative;
+		@apply relative flex flex-col;
 	}
 
 	.blog-card__img {
-		@apply aspect-16/9;
+		@apply aspect-16/9.5;
 		img {
 			@apply w-full h-full rounded-2xl object-cover;
 		}
 	}
 
 	.blog-card__content {
-		@apply pt-5;
+		@apply pt-5 flex flex-col grow items-start;
 		p {
-			@apply mb-2.5 line-clamp-2 text-xs leading-5;
+			@apply mb-2.5 line-clamp-2 text-xs leading-5 md:text-base md:leading-6 md:mb-3.5;
 		}
 	}
 
@@ -30,14 +25,14 @@
 	}
 
 	.blog-card__title {
-		@apply font-semibold text-base leading-4.75 text-dark mb-2;
+		@apply font-semibold text-base leading-4.75 text-dark mb-2 md:text-lg md:leading-5.5 md:mb-4.25;
 		a::after {
 			@apply content-[''] absolute inset-0 z-0;
 		}
 	}
 
 	.blog-card__btn {
-		@apply relative z-1;
+		@apply relative z-1 mt-auto;
 	}
 
 }

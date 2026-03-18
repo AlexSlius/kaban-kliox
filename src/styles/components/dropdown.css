@@ -1,0 +1,95 @@
+@layer components {
+
+	/* Base dropdown (hover/focus-within, pure CSS) */
+
+	.dropdown {
+		@apply relative;
+	}
+
+	.dropdown__content {
+		@apply absolute right-0 top-full pt-2 hidden z-50;
+		.group:hover &,
+		.group:focus-within & {
+			@apply block;
+		}
+	}
+
+	.dropdown__nav {
+		@apply bg-white rounded-br-[5px] rounded-bl-[5px] py-3 px-2.5 flex flex-col shadow-dropdown;
+	}
+
+	.dropdown__toggler {
+		@apply flex items-center text-sm gap-1.75 whitespace-nowrap px-2.5 cursor-pointer text-dark transition-colors ;
+	}
+
+	.dropdown__link {
+		@apply flex items-center gap-2.5 mb-3.5 last:mb-0 text-sm leading-4.25 text-dark transition-colors whitespace-nowrap hover:text-accent;
+	}
+
+	.dropdown {
+		&:hover {
+			.dropdown__toggler {
+				@apply text-accent;
+			}
+			.dropdown__arrow {
+				@apply rotate-180;
+			}
+		}
+	}
+
+	/* Dropdown over (opens over the trigger, hover/focus-within) */
+
+	.dropdown--over .dropdown__content {
+		@apply -top-2 pt-0;
+	}
+
+	.dropdown--over .dropdown__nav {
+		@apply pt-11.25;
+	}
+
+
+	.dropdown--over .dropdown__toggler {
+		@apply relative z-100;
+	}
+
+	/* Dropdown select (click, JS) */
+
+	.dropdown--select {
+		@apply w-fit;
+	}
+
+	.dropdown__trigger {
+		@apply flex items-center gap-1.25 border border-border rounded-[5px] py-2.5 px-2.5 cursor-pointer text-sm text-dark whitespace-nowrap transition-colors hover:border-dark;
+		&[aria-expanded="true"] {
+			@apply border-dark;
+		}
+	}
+
+	.dropdown__label {
+		@apply font-normal;
+	}
+
+	.dropdown__value {
+		@apply font-semibold;
+	}
+
+	.dropdown__arrow {
+		@apply transition-transform;
+	}
+
+	.dropdown__trigger[aria-expanded="true"] .dropdown__arrow {
+		@apply rotate-180;
+	}
+
+	.dropdown__list {
+		@apply absolute right-0 top-full mt-1 border border-border w-full rounded-[5px] bg-white overflow-hidden z-10;
+	}
+
+	.dropdown__option {
+		@apply block w-full text-left text-sm text-dark whitespace-nowrap px-3 py-2.5 cursor-pointer transition-colors hover:bg-[#e6f1f5] mb-1 last:mb-0;
+		&[aria-selected="true"] {
+			@apply bg-[#e6f1f5] font-semibold;
+		}
+	}
+
+}

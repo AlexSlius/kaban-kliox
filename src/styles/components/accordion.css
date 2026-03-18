@@ -1,0 +1,13 @@
+@layer components {
+
+	[data-accordion-content] {
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 300ms ease;
+	}
+
+	[data-accordion-content].is-open {
+		grid-template-rows: 1fr;
+	}
+
+}

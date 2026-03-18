@@ -24,7 +24,7 @@
 
 
 	.page-wrapper {
-		@apply pt-4 pb-7.5 md:pt-7.5 md:pb-15;
+		@apply pt-4 pb-7.5 md:pt-5 md:pb-15;
 	}
 
 }

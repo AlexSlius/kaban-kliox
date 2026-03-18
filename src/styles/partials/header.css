@@ -1,0 +1,85 @@
+@layer components {
+
+
+	/* Mobile fixed menu  */
+
+	.fixed-menu {
+		@apply fixed bottom-0 left-0 right-0 flex items-center bg-white py-1.5 px-4 z-150 h-[51px] md:h-[62px];
+	}
+
+	.fixed-menu__link {
+		@apply flex flex-col items-center grow text-base transition-colors cursor-pointer hover:text-accent transition-colors;
+		&.is-active {
+			@apply text-accent;
+		}
+	}
+
+	.fixed-menu__link-text {
+		@apply text-2xs mt-1 font-normal md:text-xs;
+	}
+
+
+	.fixed-menu__link-icon {
+		@apply w-5 h-5 flex justify-center items-center relative md:w-6 md:h-6;
+		svg {
+			@apply w-full h-full;
+		}
+	}
+
+	/* User navigation */
+
+	.user-navigation {
+		@apply flex items-center gap-1 md:gap-2 xl:gap-3;
+	}
+
+	.user-navigation__link {
+		@apply min-w-6 h-6 flex items-center justify-center text-dark transition-colors hover:text-accent cursor-pointer bg-transparent lg:min-w-12 lg:h-12;
+	}
+
+	.user-navigation__icon {
+		@apply relative flex items-center justify-center w-6 h-6 lg:w-8.25 lg:h-8.25;
+		svg {
+			@apply w-full h-full;
+		}
+	}
+
+	.user-navigation__cart {
+		@apply gap-2.5;
+	}
+
+	.user-navigation__price {
+		@apply text-sm font-semibold text-dark whitespace-nowrap;
+	}
+
+	/* Account dropdown hover state */
+
+	.group:hover > .user-navigation__link,
+	.group:focus-within > .user-navigation__link {
+		@apply text-accent;
+	}
+
+	/* Search */
+
+	.cities__choose-link {
+		@apply text-xs font-normal leading-3.75 w-fit cursor-pointer transition-colors hover:text-accent md:text-sm lg:text-base;
+	}
+
+	/* Count */
+
+	.count {
+		@apply absolute -bottom-0.5 -right-1 rounded-full bg-primary h-3 min-w-3 leading-0 text-white font-medium text-3xs flex items-center justify-center md:h-3.5 md:min-w-3.5 lg:h-4.5 lg:text-2xs lg:min-w-4.5;
+	}
+
+	/* Top bar */
+
+	.top-nav {
+		@apply lg:items-center lg:gap-3 xl:gap-7.5 lg:mx-auto;
+		a {
+			@apply transition-colors text-sm text-text hover:text-accent lg:relative;
+			&:not(:first-child)::before {
+				@apply content-[''] absolute w-0.25 h-3.5 bg-border top-1/2 -translate-y-1/2 -left-1.75 xl:-left-3.75;
+			}
+		}
+	}
+
+}

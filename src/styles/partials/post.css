@@ -1,0 +1,30 @@
+@layer components {
+
+	.post {
+		ul {
+			@apply text-dark mb-3.75 last:mb-0 lg:mb-5 pl-5;
+			li {
+				@apply mb-2 last:mb-0 list-disc;
+			}
+		}
+		ol {
+			@apply text-dark mb-3.75 last:mb-0 lg:mb-5 pl-5;
+			li {
+				@apply mb-2 last:mb-0 list-decimal;
+			}
+		}
+		p {
+			@apply text-dark mb-3.75 last:mb-0 lg:mb-5;
+		}
+		blockquote {
+			@apply text-dark border-l-1 border-l-border py-2.5 px-4 text-lg leading-5 mb-3.75 last:mb-0 lg:py-3.75 lg:px-7.5 lg:text-xl lg:leading-7 lg:mb-5 lg:border-l-2;
+		}
+		img {
+			@apply w-full rounded-[15px] mb-3.75 block aspect-16/8 object-cover lg:mb-5;
+		}
+		a {
+			@apply border-b border-b-dark transition-colors hover:border-b-accent hover:text-accent;
+		}
+	}
+
+}

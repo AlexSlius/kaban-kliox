@@ -1,0 +1,16 @@
+@layer components {
+
+	.modal {
+		@apply hidden text-text py-10 px-10 rounded-[15px] w-full max-w-[600px];
+	}
+
+	.modal-close {
+		@apply flex items-center justify-center w-12 h-12 absolute right-0 top-0 text-text cursor-pointer transition-colors hover:text-accent;
+	}
+
+
+	.modal-dialog {
+		@apply w-full;
+	}
+
+}
