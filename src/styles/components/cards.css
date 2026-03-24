@@ -7,7 +7,7 @@
 	}
 
 	.blog-card__img {
-		@apply aspect-16/9.5;
+		aspect-ratio: 16 / 9.5;
 		img {
 			@apply w-full h-full rounded-2xl object-cover;
 		}
@@ -33,6 +33,172 @@
 
 	.blog-card__btn {
 		@apply relative z-1 mt-auto;
+	}
+
+
+	/* Product card */
+
+
+	.card {
+		@apply flex flex-col bg-white rounded-[5px] p-1.25 relative md:py-5 md:px-3.75;
+	}
+
+
+	.card__img {
+		@apply w-full block overflow-hidden;
+		aspect-ratio: 1 / 0.9333;
+		
+		@variant md {
+			aspect-ratio: 1 / 0.6896;
+		}
+		
+		img {
+			@apply w-full h-full object-contain;
+		}
+	}
+
+
+	.card__delete {
+		@apply md:w-12 md:h-12 flex justify-center items-center cursor-pointer md:absolute md:right-0 md:top-0;
+		span {
+			@apply flex items-center justify-center rounded-full w-6 h-6 bg-border shadow-pagination transition-colors text-[#E85F5F];
+		}
+		&:hover span {
+			@apply bg-danger text-white transition-colors;
+		}
+	}
+
+
+	.card__content {
+		@apply pt-2.5 md:pt-5;
+	}
+
+
+	.card__code {
+		@apply text-2xs leading-3 font-light md:text-xs md:leading-3.75;
+	}
+
+
+	.card__rate {
+		@apply flex items-center text-2xs text-dark leading-3 gap-0.75 md:text-xs md:leading-3.75;
+		svg {
+			@apply text-accent md:w-3.5 md:h-3.5;
+		}
+	}
+
+
+	.card__title {
+		@apply text-sm leading-4.25 font-semibold text-dark block transition-colors hover:text-accent md:text-base md:leading-4.75 lg:text-lg lg:leading-5.5;
+	}
+
+	.card__status {
+		@apply text-primary font-medium text-xs leading-3.75 md:text-sm md:leading-4.25;
+	}
+
+	.card__price {
+		@apply flex items-baseline gap-1.25 md:gap-2.5;
+	}
+
+
+	.card__price-new {
+		@apply text-base leading-4.75 text-dark md:text-base md:leading-4.25 lg:text-lg lg:leading-5.5; 
+	}
+
+
+	.card__price-old {
+		@apply text-xs leading-3.75 text-gray line-through md:text-sm md:leading-4.25;
+	}
+
+
+	.card__nav {
+		@apply flex items-center gap-1.25;
+	}
+
+	.card__nav-btn {
+		@apply rounded-full flex items-center justify-center w-6 h-6 bg-border text-text cursor-pointer transition-colors hover:bg-accent hover:text-dark active:bg-accent-active md:w-8 md:h-8;
+		svg {
+			@apply w-4 h-4 md:w-5 md:h-5;
+		}
+		&.is-favourite {
+			@apply bg-accent;
+			svg {
+				@apply fill-danger stroke-danger;
+			}
+		}
+	}
+
+
+	/* Badges */
+
+
+	.badges {
+		@apply flex flex-col gap-0.5 items-start;
+	}
+
+
+	.badges__label {
+		@apply py-0.25 px-1.25 text-white text-2xs leading-3 rounded-tr-[5px] rounded-br-[5px] md:text-xs md:leading-3.75 lg:text-sm lg:leading-4.25 lg:py-0.5 lg:px-3.5;
+	}
+
+
+	.badges__label--green {
+		@apply bg-success;
+	}
+
+	.badges__label--red {
+		@apply bg-danger;
+	}
+
+	.badges__label--orange {
+		@apply bg-accent;
+	}
+
+
+	/* Team card */
+
+
+	.team-card__img {
+		aspect-ratio: 1 / 1.1292;
+		img {
+			@apply rounded-[15px] w-full h-full object-cover;
+		}
+	}
+
+
+	.team-card__content {
+		@apply pt-2.5 md:pt-5;
+	}
+
+
+	.team-card__name {
+		@apply text-dark font-semibold text-base leading-4.75;
+	}
+
+
+	.team-card__job {
+		@apply mt-2.5 text-sm leading-4.25;
+	}
+
+
+	/* How card */
+
+
+	.how-card {
+		@apply bg-white py-5 px-5 rounded-[5px];
+	}
+
+	.how-card__icon {
+		@apply mb-5;
+	}
+
+	.how-card-title {
+		@apply text-dark font-semibold text-base leading-4.75 mb-2.5;
+	}
+
+	.how-card-content {
+		p {
+			@apply text-sm leading-4.25;
+		}
 	}
 
 }

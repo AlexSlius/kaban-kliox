@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Моя інформація — Kaban</title>
+	<meta content="Оновіть контактні дані в особистому кабінеті Kaban для швидкого оформлення замовлень."
+		name="description">
+
+	<link href="https://kaban.com/account/info" rel="canonical">
+
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
+
+	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="/styles/main.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Головна",
+				"item": "https://kaban.com/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Особистий кабінет",
+				"item": "https://kaban.com/account"
+			},
+			{
+				"@type": "ListItem",
+				"position": 3,
+				"name": "Моя інформація"
+			}
+		]
+	}
+	</script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-body pb-12.75 md:pb-15.5 lg:pb-0">
+
+	<a class="skip-link" href="#main-content">Перейти до основного контенту</a>
+
+	{{> header}}
+
+	<main class="flex-1" id="main-content">
+
+		<div class="page-wrapper">
+			<div class="container">
+				<nav aria-label="Breadcrumb">
+					<ol class="breadcrumb mb-5 md:mb-15">
+						<li><a href="/" class="breadcrumb__link">Головна</a></li>
+						<li class="breadcrumb__separator" aria-hidden="true">/</li>
+						<li><a href="/" class="breadcrumb__link">Особистий кабінет</a></li>
+						<li class="breadcrumb__separator" aria-hidden="true">/</li>
+						<li aria-current="page" class="breadcrumb__current">Моя інформація</li>
+					</ol>
+				</nav>
+				<div class="grid grid-cols-12 lg:grid-cols-12 lg:gap-7.5">
+					<div class="col-span-12 lg:col-span-3">
+						<aside class="lk-sidebar">
+							<div class="lk-user pb-2.5 border-b border-b-border mb-5 lg:pb-5 lg:mb-7.5">
+								<div class="lk-user__img">
+									<span>o</span>
+								</div>
+								<div>
+									<div class="lk-user__name">Олександр Петренко</div>
+									<div class="lk-user__subtitle">Кабінет покупця</div>
+								</div>
+							</div>
+							<nav class="lk-nav hidden lg:block" aria-label="Навігація кабінету">
+								<a href="#" class="lk-nav__link">
+									<svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor"
+										stroke-width="1.2" stroke-miterlimit="10" width="18" height="18" viewBox="0 0 18 18">
+										<path d="M17.1953 3.71323L8.89844 6.78613L0.601562 3.71323" stroke-linecap="round" />
+										<path d="M12.8711 2.1312L4.57422 5.2041" />
+										<path
+											d="M0.601562 3.71259V14.0628L8.89844 17.1357L17.1953 14.0628V3.71259L8.89844 0.639691L0.601562 3.71259Z"
+											stroke-linecap="round" />
+										<path d="M8.89844 6.78599V17.1362" stroke-linecap="round" />
+										<path
+											d="M5.38274 9.70557C5.38274 9.705 5.38281 9.70448 5.38281 9.70391V5.16876C5.38281 4.78042 5.06802 4.46563 4.67969 4.46563C4.29135 4.46563 3.97656 4.78042 3.97656 5.16876V9.1848L5.38274 9.70557Z"
+											fill="currentColor" stroke="none" />
+									</svg>
+									Мої замовлення
+								</a>
+								<a href="#" class="lk-nav__link is-active">
+									<svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor"
+										stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" width="18" height="18"
+										viewBox="0 0 18 18">
+										<path
+											d="M4.39844 5.1001C4.39844 2.61483 6.41317 0.600099 8.89844 0.600099C11.3837 0.600099 13.3984 2.61483 13.3984 5.1001C13.3984 7.58536 11.3837 9.6001 8.89844 9.6001C6.41317 9.6001 4.39844 7.58536 4.39844 5.1001Z"
+											stroke-linejoin="round" />
+										<path
+											d="M14.0347 10.6196C14.8541 10.9837 15.5097 11.4147 16.0066 11.8513C16.7641 12.5169 17.1953 13.4784 17.1953 14.4868V15.7876C17.1953 16.5642 16.5657 17.1938 15.7891 17.1938H2.00781C1.23118 17.1938 0.601562 16.5642 0.601562 15.7876V14.4868C0.601562 13.4784 1.03275 12.5169 1.7903 11.8513C3.07294 10.7244 5.4122 9.6001 8.89844 9.6001" />
+									</svg>
+									Моя інформація
+								</a>
+								<a href="#" class="lk-nav__link">
+									<svg aria-hidden="true" fill="none" focusable="false" stroke="currentColor"
+										stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
+										width="18" height="18" viewBox="0 0 16 14">
+										<path
+											d="M8.0019 3.73585C8.0019 3.73585 8.90503 0.600115 11.7648 0.600115C13.9924 0.600115 15.4022 2.3979 15.4022 4.52769C15.4022 7.47325 12.4652 9.42367 8.0019 13.1431C3.53865 9.42367 0.601562 7.47325 0.601562 4.52769C0.601562 2.3979 2.01139 0.600115 4.23902 0.600115C7.09881 0.600115 8.0019 3.73585 8.0019 3.73585Z" />
+									</svg>
+									Обране
+								</a>
+								<a href="#" class="lk-nav__link text-danger border-t border-t-border pt-6.75 mt-6.75">
+									<svg aria-hidden="true" fill="currentColor" focusable="false" width="18" height="18"
+										viewBox="0 0 16 16">
+										<path
+											d="M15.5011 7.49997H9.16795C8.89196 7.49997 8.66797 7.27598 8.66797 6.99998C8.66797 6.72399 8.89196 6.5 9.16795 6.5H15.5011C15.7771 6.5 16.0011 6.72399 16.0011 6.99998C16.0011 7.27598 15.7771 7.49997 15.5011 7.49997Z" />
+										<path
+											d="M12.9999 9.99954C12.8718 9.99954 12.7439 9.95083 12.6465 9.85294C12.4512 9.65751 12.4512 9.34087 12.6465 9.14556L14.7931 6.99902L12.6465 4.85236C12.4512 4.65705 12.4512 4.34041 12.6465 4.14511C12.8419 3.94968 13.1585 3.94968 13.3539 4.14511L15.8538 6.64503C16.0491 6.84033 16.0491 7.15698 15.8538 7.35228L13.3539 9.8522C13.2558 9.95083 13.1279 9.99954 12.9999 9.99954Z" />
+										<path
+											d="M5.33321 15.9995C5.19051 15.9995 5.05514 15.9795 4.91989 15.9375L0.90793 14.6009C0.362049 14.4102 0 13.9015 0 13.333V1.33333C0 0.598004 0.598004 0 1.33333 0C1.47591 0 1.61128 0.0200189 1.74665 0.0620098L5.75849 1.39864C6.30449 1.58931 6.66642 2.09796 6.66642 2.66654V14.6662C6.66642 15.4015 6.06854 15.9995 5.33321 15.9995ZM1.33333 0.999969C1.14999 0.999969 0.999969 1.14999 0.999969 1.33333V13.333C0.999969 13.4749 1.0953 13.6069 1.23128 13.6542L5.22445 14.9849C5.25313 14.9942 5.29048 14.9995 5.33321 14.9995C5.51655 14.9995 5.66645 14.8495 5.66645 14.6662V2.66654C5.66645 2.52458 5.57111 2.39263 5.43513 2.34526L1.44197 1.01462C1.41329 1.00534 1.37593 0.999969 1.33333 0.999969Z" />
+										<path
+											d="M10.165 5.33321C9.889 5.33321 9.66501 5.10922 9.66501 4.83322V1.83332C9.66501 1.37398 9.29112 0.999969 8.83178 0.999969H1.33202C1.05602 0.999969 0.832031 0.775977 0.832031 0.499984C0.832031 0.223992 1.05602 0 1.33202 0H8.83178C9.8431 0 10.665 0.821996 10.665 1.83332V4.83322C10.665 5.10922 10.441 5.33321 10.165 5.33321Z" />
+										<path
+											d="M8.83462 13.9997H6.16795C5.89196 13.9997 5.66797 13.7757 5.66797 13.4997C5.66797 13.2237 5.89196 12.9997 6.16795 12.9997H8.83462C9.29395 12.9997 9.66784 12.6257 9.66784 12.1664V9.16649C9.66784 8.8905 9.89184 8.6665 10.1678 8.6665C10.4438 8.6665 10.6678 8.8905 10.6678 9.16649V12.1664C10.6678 13.1777 9.84594 13.9997 8.83462 13.9997Z" />
+									</svg>
+									Вийти
+								</a>
+							</nav>
+						</aside>
+					</div>
+					<div class="col-span-12 lg:col-span-9">
+						<h1 class="h2 mb-2.5 lg:mb-3.75">Моя інформація</h1>
+						<p class="mb-5 lg:mb-7.5">Тут ви можете оновити свої контактні дані для швидкого оформлення замовлень.
+						</p>
+						<form action="/" aria-label="Форма редагування інформації">
+							<div class="grid grid-cols-12 gap-2.5 mb-5 lg:gap-5">
+								<div class="col-span-12 md:col-span-6">
+									<label for="firstname" class="form-label">Ім'я</label>
+									<input type="text" class="form-input" id="firstname" placeholder="Олександр"
+										value="Олександр">
+								</div>
+								<div class="col-span-12 md:col-span-6">
+									<label for="lastname" class="form-label">Прізвище</label>
+									<input type="text" class="form-input" id="lastname" placeholder="Петренко" value="Петренко">
+								</div>
+								<div class="col-span-12 md:col-span-6">
+									<label for="phone" class="form-label">Телефон</label>
+									<input type="tel" class="form-input js-phone" id="phone" placeholder="+380 (__) ___-__-__">
+								</div>
+								<div class="col-span-12 md:col-span-6">
+									<label for="email" class="form-label">Email</label>
+									<input type="email" class="form-input" id="email" placeholder="alex@gmail.com"
+										value="alex@gmail.com">
+								</div>
+								<div class="col-span-12">
+									<label for="city" class="form-label">Місто</label>
+									<input type="text" class="form-input" id="city" placeholder="Одеса" value="Одеса">
+								</div>
+								<div class="col-span-12">
+									<label for="address" class="form-label">Адреса доставки</label>
+									<input type="text" class="form-input" id="address" placeholder="Вулиця, будинок, квартира">
+								</div>
+								<div class="col-span-12">
+									<label for="password" class="form-label">Пароль</label>
+									<input type="password" class="form-input" id="password" placeholder="••••••••">
+								</div>
+							</div>
+							<div class="mb-3.75">
+								<button type="submit" class="btn btn--orange w-full md:w-fit">Зберегти зміни</button>
+							</div>
+							<p class="text-sm">Ваші дані використовуються лише для оформлення замовлень та
+								зв'язку з вами.</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	{{> footer}}
+
+	<script defer src="/js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -9,6 +9,7 @@
     --color-primary: #006ea1;
     --color-accent: #ff9957;
 	 --color-accent-hover: #FFAD78;
+	 --color-accent-active: #e58648;
     --color-danger: #F04131;
     --color-danger-light: #f4e5e5;
     --color-success: #1daa22;
@@ -19,6 +20,7 @@
     --color-white: #fff;
 	 --color-body: #f3f9fb;
 	 --color-substrate: #e6f1f5;
+	 --color-gray: #a2a2a2;
 
 	 /* text sizes */
 	 --text-3xs: 8px;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Замовлення прийнято — Kaban</title>
+	<meta content="Ваше замовлення успішно оформлено. Дякуємо за покупку в Kaban!" name="description">
+
+	<link href="https://kaban.com/order/success" rel="canonical">
+
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
+
+	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-body pb-12.75 md:pb-15.5 lg:pb-0">
+
+	<a class="skip-link" href="#main-content">Перейти до основного контенту</a>
+
+	{{> header}}
+
+	<main class="flex-1" id="main-content">
+
+		<div class="page-wrapper">
+			<div class="container">
+				<div class="text-center pt-5">
+
+					<svg class="block mx-auto mb-5 lg:mb-7.5 lg:w-[101px] lg:h-[101px]" width="75" height="75"
+						viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_3887)">
+							<path
+								d="M50.5 101C78.3904 101 101 78.3904 101 50.5C101 22.6096 78.3904 0 50.5 0C22.6096 0 0 22.6096 0 50.5C0 78.3904 22.6096 101 50.5 101Z"
+								fill="#00BA00" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M34.7311 75.1294L16.2616 55.3616C13.733 52.6553 13.8782 48.3735 16.5845 45.8449C19.2908 43.3163 23.5726 43.4619 26.1012 46.1678L40.3477 61.4156L62.8982 40.346C63.101 40.1563 63.3129 39.9825 63.532 39.8227L74.1366 29.9148C76.8429 27.3862 81.1251 27.5317 83.6533 30.238C86.1819 32.944 86.0363 37.2261 83.3304 39.7547L50.9412 70.0169L50.9066 69.9799L39.7028 80.4482L34.7311 75.1294Z"
+								fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_3887">
+								<rect width="101" height="101" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+
+					<h1 class="h2 mb-2.5 text-2xl leading-[1.25] lg:text-[46px] lg:leading-14">Ваше замовлення
+						прийнято!
+					</h1>
+					<p class="flex items-center justify-center text-dark text-lg mb-5 lg:mb-6 lg:text-2xl">
+						Дякуємо за покупку
+						<svg class="ml-2 lg:ml-3" width="22" height="19" aria-hidden="true" focusable="false"
+							viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.016 0.000180825C19.3142 0.0162385 21.9839 2.68597 22 5.9842C22 12.0268 11 18.0109 11 18.0109C11 18.0109 0 11.9389 0 5.9842C0 2.67935 2.67911 0.000180825 5.98402 0.000180825C8.00706 -0.0155961 9.89839 1.00193 11 2.69883C12.1092 1.01019 13.9956 -0.00470386 16.016 0.000180825Z"
+								fill="#006EA1" />
+						</svg>
+					</p>
+					<p class="mb-7">Ми вже обробляємо ваше замовлення. Найближчим часом менеджер зв'яжеться з
+						вами.</p>
+
+					<div class="order-summary w-full max-w-[844px] mx-auto">
+						<div class="order-summary__row">
+							<div class="order-summary__label">Номер замовлення:</div>
+							<div class="order-summary__dots"></div>
+							<div class="order-summary__value">#10452</div>
+						</div>
+						<div class="order-summary__row">
+							<div class="order-summary__label">Сума:</div>
+							<div class="order-summary__dots"></div>
+							<div class="order-summary__value">36 000 ₴</div>
+						</div>
+						<div class="order-summary__row">
+							<div class="order-summary__label">Доставка:</div>
+							<div class="order-summary__dots"></div>
+							<div class="order-summary__value">Доставка у відділення "Нова пошта"</div>
+						</div>
+						<div class="order-summary__row order-summary__row--last">
+							<div class="order-summary__label">Статус:</div>
+							<div class="order-summary__dots"></div>
+							<div class="order-summary__value">В обробці</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col justify-center sm:flex-row gap-2.5 sm:gap-5">
+						<a href="/" class="btn btn--orange">Перейти на головну</a>
+						<a href="#" class="btn btn--gray">Мої замовлення</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	{{> footer}}
+
+	<script defer src="/js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@layer components {
+
+
+	/* Lk sidebar */
+
+
+	.lk-sidebar {
+		@apply lg:border-r lg:border-r-border lg:h-full;
+	}
+
+
+	/* User menu */
+
+	.lk-user {
+		@apply flex items-center gap-3.75;
+	}
+
+	.lk-user__img {
+		@apply rounded-full w-9.5 h-9.5 flex items-center justify-center bg-border font-semibold text-xl text-dark uppercase leading-none overflow-hidden shrink-0 relative lg:w-12.5 lg:h-12.5 lg:text-2xl;
+		img {
+			@apply absolute w-full h-full rounded-full z-1 object-cover;
+		}
+	}
+
+
+	.lk-user__name {
+		@apply font-semibold text-base text-dark leading-4.75 lg:text-xl;
+	}
+
+
+	.lk-user__subtitle {
+		@apply text-xs leading-3.75 mt-1.25 lg:text-sm lg:mt-2.25;
+	}
+
+
+	/* LK nav */
+	
+	.lk-nav__link {
+		@apply flex items-center text-dark font-medium text-xl gap-2.5 mb-5 last:mb-0 transition-colors hover:text-accent;
+		svg {
+			@apply w-6 h-6 shrink-0;
+		}
+		&.is-active {
+			@apply text-accent;
+		}
+	}
+
+	/* Lk card */
+
+
+	.lk-item {
+		@apply bg-white rounded-[5px] pt-2.5 pb-3.75 px-2.5 lg:py-3.75 lg:px-5;
+	}
+
+	.lk-item__header {
+		@apply flex items-center justify-between gap-3;
+	}
+
+	.lk-item__num {
+		@apply font-medium text-base leading-4.75 text-dark lg:text-xl lg:leading-6; 
+	}
+
+	.lk-item__date {
+		@apply text-sm mt-1.25 leading-4.25;
+	}
+
+	.lk-item__feature {
+		@apply flex items-center flex-wrap gap-x-3 gap-y-2 text-sm leading-4.25 text-dark lg:text-base lg:leading-4.75; 
+		b {
+			@apply font-semibold mr-1;
+		}
+	}
+
+	.lk-item__feature-item {
+		@apply relative flex items-center;
+		&::after {
+			@apply content-[''] rounded-full w-1.5 h-1.5 bg-accent ml-3;
+		}
+		&:last-child {
+			&::after {
+				@apply hidden;
+			}
+		}
+	}
+
+
+	.lk-card {
+		@apply flex gap-2.5 rounded-[5px] border border-border py-2.25 px-2.5 transition-colors hover:border-accent;
+	}
+
+
+	.lk-card__img {
+		@apply w-[84px] h-[59px] shrink-0;
+		img {
+			@apply w-full h-full rounded-[5px] object-cover;
+		}
+	}
+
+
+	.lk-card__name {
+		@apply text-sm leading-4.25 text-dark;
+	}
+
+
+	.lk-card__count {
+		@apply text-sm leading-4.25 mt-2;
+	}
+
+
+	/* Status */
+
+	.status {
+		@apply font-semibold text-xs leading-3.75 rounded-[5px] py-2 px-2.5 lg:text-sm lg:leading-4.25;
+	}
+
+	.status--proccess {
+		@apply text-warning bg-warning-light;
+	}
+
+	.status--success {
+		@apply text-success bg-success-light;
+	}
+
+	.status--danger {
+		@apply text-danger bg-danger-light;
+	}
+
+
+}

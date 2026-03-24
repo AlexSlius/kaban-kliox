@@ -1,0 +1,275 @@
+@layer components {
+
+	.filter {
+		@apply flex flex-col fixed left-0 top-0 w-full h-full z-200 bg-body -translate-x-full transition-transform duration-300 lg:static lg:translate-x-0 lg:h-auto lg:max-h-[874px];
+		&.is-open {
+			@apply translate-x-0;
+		}
+		@variant lg {
+			width: calc(100% + 10px);
+		}
+	}
+
+	.filter__open {
+		@apply w-full max-w-[250px] rounded-[10px] py-3.75 px-8 text-white text-base uppercase font-semibold flex items-center justify-center gap-2.5 bg-[rgb(10_25_41/0.8)] transition-colors cursor-pointer z-100 fixed left-1/2 -translate-x-1/2 bottom-[61px] md:bottom-[74px] lg:hidden; 
+		&.is-on-dark {
+			@apply bg-white text-dark;
+		}
+	}
+
+
+	.filter__top {
+		@apply flex justify-between items-center gap-2 pl-4 lg:hidden;
+	}
+
+
+	.filter__close  {
+		@apply w-12 h-12 flex justify-center items-center cursor-pointer transition-colors hover:text-accent;
+	}
+
+
+	.filter__block {
+		@apply px-4 pb-5.5 overflow-y-auto grow lg:p-0 lg:pr-2.5;
+
+		@variant lg {
+			&::-webkit-scrollbar {
+				@apply w-[3px] bg-border rounded-2xl;
+			}
+			&::-webkit-scrollbar-thumb {
+				@apply bg-primary rounded-2xl;
+			}
+		}
+
+	}
+
+    /* Section */
+
+	.filter__section {
+		@apply border border-border rounded-[15px] overflow-hidden mb-1.25 last:mb-0;
+	}
+
+    /* Header */
+
+	.filter__header {
+		@apply flex text-left justify-between items-center w-full gap-2 px-5 py-3.25 cursor-pointer;
+	}
+
+	.filter__header--static {
+		@apply cursor-default;
+	}
+
+	.filter__title {
+		@apply font-semibold text-sm leading-4.75 text-dark lg:text-base lg:leading-6;
+	}
+
+    /* Toggle icon */
+
+	.filter__icon {
+		@apply relative shrink-0 w-4 h-4;
+	}
+
+	.filter__icon::before,
+	.filter__icon::after {
+		content: '';
+		@apply absolute bg-dark rounded-full;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.filter__icon::before {
+		@apply w-3 h-0.5;
+	}
+
+	.filter__icon::after {
+		@apply w-0.5 h-3;
+		transition: transform 0.2s ease, opacity 0.2s ease;
+	}
+
+	[aria-expanded="true"] .filter__icon::after {
+		transform: translate(-50%, -50%) rotate(90deg);
+		@apply opacity-0;
+	}
+
+    /* Body */
+
+	.filter__body {
+		@apply hidden px-5 pb-3;
+	}
+
+	.filter__body.is-open {
+		@apply block;
+	}
+
+	.filter__section--static .filter__body {
+		@apply block;
+	}
+
+	/* List */
+
+	.filter__list {
+		@apply flex flex-col gap-0.5 list-none m-0 p-0;
+	}
+
+    /* Option */
+
+	.filter__option {
+		@apply relative flex items-center justify-between gap-2 py-1 pl-6.25 text-sm leading-5 text-dark hover:text-accent transition-colors;
+		&::before {
+			@apply content-[''] absolute top-1.25 left-0 border border-border rounded-[1px] w-4 h-4 ;
+		}
+	}
+
+	.filter__option--active {
+		&::before {
+			@apply bg-[url('/assets/icons/checkbox.svg')] bg-no-repeat bg-center;
+		}
+	}
+
+	.filter__option-name {
+		@apply grow font-medium text-sm leading-4.25;
+	}
+
+	.filter__count {
+		@apply text-sm leading-4.25 text-text;
+	}
+
+    /* Price */
+
+	.filter__price-row {
+		@apply flex items-center justify-between gap-2 mb-6 text-sm pt-2 lg:flex-col lg:items-start xl:flex-row xl:items-center; 
+	}
+
+	.filter__price-apply {
+		@apply shrink-0 px-3 py-2 text-dark text-xs font-semibold bg-border rounded-[10px] hover:bg-accent transition-colors cursor-pointer;
+	}
+
+	.filter__slider {
+		@apply mx-1 mb-1.5;
+	}
+
+	/* noUiSlider overrides */
+
+	.filter__slider.noUi-target {
+		@apply bg-border border-0 shadow-none h-0.5 rounded-none;
+	}
+
+	.filter__slider .noUi-connect {
+		@apply bg-primary;
+	}
+
+	.filter__slider .noUi-handle {
+		@apply w-2 h-2 rounded-full bg-primary border-0 shadow-none cursor-pointer;
+		top: -3px;
+		right: 0;
+	}
+
+	.filter__slider .noUi-handle::before,
+	.filter__slider .noUi-handle::after {
+		display: none;
+	}
+
+    /* Color */
+
+	.filter__color {
+		@apply flex items-center gap-2.5 py-1 text-sm leading-5 text-dark hover:text-accent transition-colors;
+	}
+
+
+	.filter__color--active {
+		.filter__color-dot {
+			svg {
+				@apply opacity-100;
+			}
+		}
+	}
+
+	.filter__color-dot {
+		@apply shrink-0 w-6 h-6 rounded-full relative text-white;
+		svg {
+			@apply absolute left-1/2 top-1/2 -translate-1/2 opacity-0 transition-colors;
+		}
+	}
+
+	.filter__color-check {
+		@apply shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-white text-xs;
+	}
+
+	.filter__color-name {
+		@apply grow text-sm leading-4.25;
+	}
+
+
+	/*  Sort  */
+
+	.sort {
+		@apply border border-border rounded-[5px] flex items-center justify-between pl-3.5 md:rounded-[15px];
+	}
+
+	.sort__text {
+		@apply text-xs text-text md:text-sm;
+	}
+
+	.sort__controls {
+		@apply flex items-center self-stretch;
+
+		.dropdown__trigger {
+			@apply border-0 rounded-none text-xs h-full px-3 py-3 md:text-sm md:py-4.25;
+			@media (hover: hover) {
+				&:hover {
+					@apply border-0 ;
+				}
+			}
+			&[aria-expanded="true"] {
+				@apply border-0 ;
+			}
+		}
+	}
+
+
+	/* Category filter */
+
+
+	.category-filter {
+		@apply flex gap-1.25 overflow-x-auto pb-2 pr-4 md:w-full md:overflow-x-hidden md:pr-0 md:grid md:grid-cols-3 lg:gap-2.5 lg:grid-cols-4 xl:grid-cols-5;
+		width: calc(100% + 16px);
+		@variant md {
+			width: 100%;
+		}
+	}
+
+
+	.category-filter__link {
+		@apply border border-border rounded-[5px] bg-white py-1.25 px-1.25 flex flex-col items-center w-[106px] shrink-0 transition-colors md:w-full md:flex-row md:gap-3.75 md:py-4.75 md:px-5 md:border-transparent;
+		&.is-active {
+			@apply border-accent;
+			.category-filter__link-img, .category-filter__link-name {
+				@apply text-accent;
+			}
+		}
+		&:hover {
+			@apply border-accent;
+			.category-filter__link-img, .category-filter__link-name {
+				@apply text-accent;
+			}
+		}
+	}
+
+
+	.category-filter__link-img {
+		@apply w-[78px] h-[58px] shrink-0 transition-colors md:flex md:items-center md:justify-center md:w-8.5 md:h-auto md:text-dark;
+		img {
+			@apply w-full h-full md:hidden;
+		}
+		svg {
+			@apply hidden md:block;
+		}
+	}
+
+
+	.category-filter__link-name {
+		@apply text-dark text-2xs font-semibold text-center leading-3 transition-colors md:text-sm lg:text-base md:text-left;
+	}
+
+
+}

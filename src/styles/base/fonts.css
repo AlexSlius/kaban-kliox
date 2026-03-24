@@ -42,12 +42,3 @@
     font-display: swap;
     unicode-range: U+0000-00FF, U+0400-04FF;
 }
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../../assets/fonts/InterBlack.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+0000-00FF, U+0400-04FF;
-}

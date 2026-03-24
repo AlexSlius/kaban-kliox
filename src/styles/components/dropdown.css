@@ -26,7 +26,7 @@
 		@apply flex items-center gap-2.5 mb-3.5 last:mb-0 text-sm leading-4.25 text-dark transition-colors whitespace-nowrap hover:text-accent;
 	}
 
-	.dropdown {
+	.dropdown:not(.dropdown--select) {
 		&:hover {
 			.dropdown__toggler {
 				@apply text-accent;
@@ -59,7 +59,12 @@
 	}
 
 	.dropdown__trigger {
-		@apply flex items-center gap-1.25 border border-border rounded-[5px] py-2.5 px-2.5 cursor-pointer text-sm text-dark whitespace-nowrap transition-colors hover:border-dark;
+		@apply flex items-center gap-1.25 border border-border rounded-[5px] py-2.5 px-2.5 cursor-pointer text-sm text-dark whitespace-nowrap transition-colors;
+		@media (hover: hover) {
+			&:hover {
+				@apply border-dark;
+			}
+		}
 		&[aria-expanded="true"] {
 			@apply border-dark;
 		}

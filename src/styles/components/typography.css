@@ -1,5 +1,34 @@
 @layer components {
-	.section-title {
+
+	.h1 {
+		@apply text-dark font-normal text-2xl leading-[1.2083] md:text-4xl xl:text-[54px] lg:leading-[1.2037];
+	}
+
+	.h2 {
 		@apply font-bold text-lg leading-5.5 text-dark md:text-2xl md:leading-7.25;
 	}
+
+	.h3 {
+		@apply text-dark text-base font-medium lg:text-xl lg:leading-6;
+	}
+
+
+	/* Section styles */
+
+	.section-label {
+		@apply text-primary font-light text-lg leading-5.5 lg:text-[22px] lg:leading-6.75;
+	}
+
+
+	.section-title {
+		@apply border-b border-b-border flex justify-between items-center gap-3;
+		.h2 {
+			@apply relative; 
+			&::before {
+				@apply content-[''] bg-accent w-full absolute h-0.5 left-0 -bottom-4;
+			}
+		}
+	}
+
+
 }

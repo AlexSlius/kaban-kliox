@@ -3,15 +3,21 @@
 @import "./base/vars.css";
 
 @import "@fancyapps/ui/dist/fancybox/fancybox.css" layer(base);
+@import "nouislider/dist/nouislider.css" layer(base);
 
 @import "./partials/header.css";
+@import "./partials/footer.css";
+@import "./partials/post.css";
+@import "./partials/lk.css";
+@import "./partials/category.css";
+@import "./partials/filter.css";
+@import "./partials/features.css";
+
 @import "./components/buttons.css";
 @import "./components/cards.css";
 @import "./components/forms.css";
 @import "./components/layout.css";
 @import "./components/navigation.css";
-@import "./partials/footer.css";
-@import "./partials/post.css";
 @import "./components/dropdown.css";
 @import "./components/modal.css";
 @import "./components/accordion.css";
@@ -20,11 +26,14 @@
 
 
 
+
+
 @layer base {
 
 	/* Body lock */
 
-	:root:has(.is-menu-open) {
+	:root:has(.is-menu-open),
+	:root:has(.is-filter-open) {
 		overflow: hidden;
 	}
 

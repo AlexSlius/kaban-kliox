@@ -1,3 +1,4 @@
+import { scheduleIdle } from '../utils/scheduleIdle.js';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -34,7 +35,7 @@ function initDeferred() {
 export function initSliders() {
 	initCritical();
 
-	requestIdleCallback(() => {
+	scheduleIdle(() => {
 		initDeferred();
 	}, { timeout: 2000 });
 }

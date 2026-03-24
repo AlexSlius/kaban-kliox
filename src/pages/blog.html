@@ -32,9 +32,7 @@
 	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
 
 	<!-- Preload LCP — первая карточка блога -->
-	<link rel="preload" as="image" href="/assets/images/blog/led-strip-400w.webp" imagesrcset="/assets/images/blog/led-strip-400w.webp 400w,
-					 /assets/images/blog/led-strip-800w.webp 800w" imagesizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-		fetchpriority="high">
+	<link rel="preload" as="image" href="/assets/images/led-strip.webp" fetchpriority="high">
 
 	<link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -58,7 +56,7 @@
 				</nav>
 				<div
 					class="flex flex-col gap-4 mb-7.5 pb-2.75 border-b border-b-border sm:flex-row sm:justify-between sm:items-center">
-					<h1 class="section-title">Корисні статті</h1>
+					<h1 class="h2">Корисні статті</h1>
 					<div class="dropdown dropdown--select w-full sm:w-fit" data-dropdown>
 						<button class="dropdown__trigger w-full" type="button" aria-haspopup="listbox" aria-expanded="false"
 							data-dropdown-trigger>
@@ -85,11 +83,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/led-strip-400w.webp 400w,
-											/assets/images/blog/led-strip-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/led-strip-400w.jpg" srcset="/assets/images/blog/led-strip-400w.jpg 400w,
-											/assets/images/blog/led-strip-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Як вибрати світлодіодну стрічку для дому" fetchpriority="high">
+								<source type="image/webp" srcset="/assets/images/led-strip.webp">
+								<img src="/assets/images/led-strip.jpg" width="444" height="262"
+									alt="Як вибрати світлодіодну стрічку для дому" fetchpriority="high">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -106,12 +102,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/batteries-400w.webp 400w,
-											/assets/images/blog/batteries-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/batteries-400w.jpg" srcset="/assets/images/blog/batteries-400w.jpg 400w,
-											/assets/images/blog/batteries-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Які акумулятори краще для ліхтарів і сигналізацій"
-									loading="lazy" decoding="async">
+								<source type="image/webp" srcset="/assets/images/batteries.webp">
+								<img src="/assets/images/batteries.jpg" width="444" height="262"
+									alt="Які акумулятори краще для ліхтарів і сигналізацій" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -128,13 +121,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.webp 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.webp 800w"
-									sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/usb-type-c-vs-micro-400w.jpg" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.jpg 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy"
-									decoding="async">
+								<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+								<img src="/assets/images/usb-type-c-vs-micro.jpg" width="444" height="262"
+									alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -151,12 +140,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/led-strip-400w.webp 400w,
-											/assets/images/blog/led-strip-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/led-strip-400w.jpg" srcset="/assets/images/blog/led-strip-400w.jpg 400w,
-											/assets/images/blog/led-strip-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Як вибрати світлодіодну стрічку для дому" loading="lazy"
-									decoding="async">
+								<source type="image/webp" srcset="/assets/images/led-strip.webp">
+								<img src="/assets/images/led-strip.jpg" width="444" height="262"
+									alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -173,12 +159,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/batteries-400w.webp 400w,
-											/assets/images/blog/batteries-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/batteries-400w.jpg" srcset="/assets/images/blog/batteries-400w.jpg 400w,
-											/assets/images/blog/batteries-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Які акумулятори краще для ліхтарів і сигналізацій"
-									loading="lazy" decoding="async">
+								<source type="image/webp" srcset="/assets/images/batteries.webp">
+								<img src="/assets/images/batteries.jpg" width="444" height="262"
+									alt="Які акумулятори краще для ліхтарів і сигналізацій" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -195,13 +178,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.webp 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.webp 800w"
-									sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/usb-type-c-vs-micro-400w.jpg" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.jpg 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy"
-									decoding="async">
+								<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+								<img src="/assets/images/usb-type-c-vs-micro.jpg" width="444" height="262"
+									alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -218,12 +197,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/led-strip-400w.webp 400w,
-											/assets/images/blog/led-strip-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/led-strip-400w.jpg" srcset="/assets/images/blog/led-strip-400w.jpg 400w,
-											/assets/images/blog/led-strip-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Як вибрати світлодіодну стрічку для дому" loading="lazy"
-									decoding="async">
+								<source type="image/webp" srcset="/assets/images/led-strip.webp">
+								<img src="/assets/images/led-strip.jpg" width="444" height="262"
+									alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -240,12 +216,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/batteries-400w.webp 400w,
-											/assets/images/blog/batteries-800w.webp 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/batteries-400w.jpg" srcset="/assets/images/blog/batteries-400w.jpg 400w,
-											/assets/images/blog/batteries-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Які акумулятори краще для ліхтарів і сигналізацій"
-									loading="lazy" decoding="async">
+								<source type="image/webp" srcset="/assets/images/batteries.webp">
+								<img src="/assets/images/batteries.jpg" width="444" height="262"
+									alt="Які акумулятори краще для ліхтарів і сигналізацій" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -262,13 +235,9 @@
 					<article class="blog-card">
 						<div class="blog-card__img">
 							<picture>
-								<source type="image/webp" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.webp 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.webp 800w"
-									sizes="(min-width: 768px) 444px, calc(100vw - 32px)">
-								<img src="/assets/images/blog/usb-type-c-vs-micro-400w.jpg" srcset="/assets/images/blog/usb-type-c-vs-micro-400w.jpg 400w,
-											/assets/images/blog/usb-type-c-vs-micro-800w.jpg 800w" sizes="(min-width: 768px) 444px, calc(100vw - 32px)"
-									width="444" height="262" alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy"
-									decoding="async">
+								<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+								<img src="/assets/images/usb-type-c-vs-micro.jpg" width="444" height="262"
+									alt="Порівняння Micro USB та Type-C для зарядки" loading="lazy" decoding="async">
 							</picture>
 						</div>
 						<div class="blog-card__content">
@@ -283,25 +252,9 @@
 					</article>
 
 				</div>
-				<nav aria-label="Пагінація" class="pagination mt-5 lg:mt-10 mx-auto">
-					<a href="#" class="pagination__btn" aria-label="Перша сторінка">
-						<svg aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12" fill="none"
-							stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M7 1L1 6L7 11M13 1L7 6L13 11" />
-						</svg>
-					</a>
-					<a href="#" class="pagination__item" aria-label="Сторінка 1">1</a>
-					<a href="#" class="pagination__item pagination__item--active" aria-current="page"
-						aria-label="Сторінка 2, поточна">2</a>
-					<a href="#" class="pagination__item" aria-label="Сторінка 3">3</a>
-					<a href="#" class="pagination__item" aria-label="Сторінка 4">4</a>
-					<a href="#" class="pagination__btn" aria-label="Остання сторінка">
-						<svg aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12" fill="none"
-							stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M1 1L7 6L1 11M7 1L13 6L7 11" />
-						</svg>
-					</a>
-				</nav>
+				<div class="mt-5 lg:mt-10 flex justify-center">
+					{{> pagination}}
+				</div>
 			</div>
 		</div>
 

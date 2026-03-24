@@ -1,0 +1,30 @@
+@layer components {
+
+	.features {
+		@apply border border-border rounded-[5px] py-5 px-5 lg:grid lg:grid-cols-4 lg:rounded-[15px] lg:px-0 lg:py-0;
+	}
+
+	.features__item {
+		@apply flex items-center gap-3.75 pb-5 mb-5 border-b border-b-border last:pb-0 last:mb-0 last:border-b-0 lg:border-b-0 lg:mb-0 lg:py-7 lg:px-5 lg:border-r lg:border-r-border last:lg:border-r-0 last:lg:pb-7;
+	}
+
+
+	.features__item-icon {
+		@apply shrink-0 w-10.5 h-10.5 flex items-center justify-center lg:w-13 lg:h-13;
+		img {
+			@apply w-full h-full block;
+		}
+	}
+
+
+	.features__item-title {
+		@apply text-dark text-sm leading-4.25 font-semibold lg:text-base lg:leading-4.75;
+	}
+	
+
+	.features__item-content {
+		p {
+			@apply text-xs leading-3.75 mt-2.5 lg:text-sm lg:leading-4.25;
+		}
+	}
+}

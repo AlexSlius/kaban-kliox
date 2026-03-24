@@ -1,0 +1,41 @@
+@layer components {
+
+
+	/* Category */
+
+
+	.category {
+		@apply bg-white py-5 px-5 rounded-[15px];
+	}
+
+
+	.category__img {
+		@apply overflow-hidden border border-border rounded-[15px] block transition-colors hover:border-accent;
+		aspect-ratio: 1 / 0.8976;
+		img {
+			@apply w-full h-full object-contain;
+		}
+	}
+
+
+	.category__content {
+		@apply pt-5;
+	}
+
+
+	.category__title {
+		@apply text-dark font-semibold text-base leading-4.75 mb-5;
+	}
+
+
+	.category__list {
+		li {
+			@apply leading-4.25 mb-2 last:mb-0;
+			a {
+				@apply text-dark text-sm leading-[inherit] transition-colors hover:text-accent;
+			}
+		}
+	}
+
+
+}

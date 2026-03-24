@@ -1,0 +1,217 @@
+<div class="filter">
+
+	<div class="filter__top">
+		<div class="flex items-center gap-3.75">
+			<div class="font-semibold text-base leading-4.75">Фільтр</div>
+			<div class="bg-border w-[1px] h-4.5"></div>
+			<button type="reset" class="font-normal text-sm text-danger cursor-pointer">Скинути</button>
+		</div>
+		<button type="button" class="filter__close js-filter-close" aria-label="Закрити фільтр">
+			<svg width="11" height="11" aria-hidden="true" stroke="currentColor" focusable="false" viewBox="0 0 11 11"
+				fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.707031 0.707031L9.70703 9.70703M0.707031 9.70703L9.70703 0.707031" stroke-width="2" />
+			</svg>
+		</button>
+	</div>
+
+	<div class="filter__block">
+
+		<div class="filter__section">
+			<button type="button" class="filter__header" aria-expanded="true" data-filter-trigger>
+				<span class="filter__title">Тип радіоприймача</span>
+				<span class="filter__icon" aria-hidden="true"></span>
+			</button>
+			<div class="filter__body is-open">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Аналогові</span>
+							<span class="filter__count">12</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Цифрові
+								DAB</span>
+							<span class="filter__count">23</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option filter__option--active">
+							<span class="filter__option-name">Інтернет-радіо</span>
+							<span class="filter__count">7</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filter__section">
+			<button type="button" class="filter__header" aria-expanded="false" data-filter-trigger>
+				<span class="filter__title">Параметри 3</span>
+				<span class="filter__icon" aria-hidden="true"></span>
+			</button>
+			<div class="filter__body">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 1</span>
+							<span class="filter__count">5</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 2</span>
+							<span class="filter__count">8</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filter__section">
+			<button type="button" class="filter__header" aria-expanded="false" data-filter-trigger>
+				<span class="filter__title">Параметри 4</span>
+				<span class="filter__icon" aria-hidden="true"></span>
+			</button>
+			<div class="filter__body">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 1</span>
+							<span class="filter__count">5</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 2</span>
+							<span class="filter__count">8</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filter__section">
+			<button type="button" class="filter__header" aria-expanded="false" data-filter-trigger>
+				<span class="filter__title">Параметри 5</span>
+				<span class="filter__icon" aria-hidden="true"></span>
+			</button>
+			<div class="filter__body">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 1</span>
+							<span class="filter__count">5</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 2</span>
+							<span class="filter__count">8</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filter__section">
+			<button type="button" class="filter__header" aria-expanded="false" data-filter-trigger>
+				<span class="filter__title">Параметри 6</span>
+				<span class="filter__icon" aria-hidden="true"></span>
+			</button>
+			<div class="filter__body">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 1</span>
+							<span class="filter__count">5</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__option">
+							<span class="filter__option-name">Варіант 2</span>
+							<span class="filter__count">8</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="filter__section filter__section--static">
+			<div class="filter__header filter__header--static">
+				<span class="filter__title">Ціна</span>
+			</div>
+			<div class="filter__body">
+				<div class="filter__price-row">
+					<span class="text-dark font-medium text-sm leading-4.25">Ціна: <span data-filter-price-label>80 —
+							812 550</span></span>
+					<button type="button" class="filter__price-apply">Застосувати</button>
+				</div>
+				<div id="filter-price-slider" class="filter__slider" data-min="80" data-max="812550" data-from="80"
+					data-to="812550"></div>
+			</div>
+		</div>
+
+		<div class="filter__section filter__section--static">
+			<div class="filter__header filter__header--static">
+				<span class="filter__title">Колір</span>
+			</div>
+			<div class="filter__body">
+				<ul class="filter__list">
+					<li>
+						<a href="#" class="filter__color">
+							<span class="filter__color-dot" style="background:#1a1a1a" aria-hidden="true">
+								<svg aria-hidden="true" stroke="currentColor" focusable="false" width="12" height="10"
+									fill="none" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.710938 4.59201L3.78786 7.70313L10.7109 0.703125" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="filter__color-name">Чорний</span>
+							<span class="filter__count">9</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__color filter__color--active">
+							<span class="filter__color-dot text-dark border border-border" style="background:#fff;"
+								aria-hidden="true">
+								<svg aria-hidden="true" stroke="currentColor" focusable="false" width="12" height="10"
+									fill="none" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.710938 4.59201L3.78786 7.70313L10.7109 0.703125" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="filter__color-name">Білий</span>
+							<span class="filter__count">1</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__color">
+							<span class="filter__color-dot" style="background:#2ba1d8" aria-hidden="true">
+								<svg aria-hidden="true" stroke="currentColor" focusable="false" width="12" height="10"
+									fill="none" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.710938 4.59201L3.78786 7.70313L10.7109 0.703125" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="filter__color-name">Синій</span>
+							<span class="filter__count">4</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="filter__color filter__color--active">
+							<span class="filter__color-dot" style="background:#38ba3c" aria-hidden="true">
+								<svg aria-hidden="true" stroke="currentColor" focusable="false" width="12" height="10"
+									fill="none" viewBox="0 0 12 10" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.710938 4.59201L3.78786 7.70313L10.7109 0.703125" stroke-width="2" />
+								</svg>
+							</span>
+							<span class="filter__color-name">Зелений</span>
+							<span class="filter__count">2</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</div>

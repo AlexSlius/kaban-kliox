@@ -21,6 +21,7 @@
         "@fancyapps/ui": "^6.1.13",
         "bun-types": "latest",
         "choices.js": "^11.2.1",
+        "nouislider": "^15.8.1",
         "swiper": "^12.1.2"
     }
 }

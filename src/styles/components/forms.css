@@ -4,19 +4,39 @@
 
 
 	.form-label {
-		@apply block text-sm font-medium text-gray-700 mb-1;
+		@apply block text-sm leading-4.25 mb-1.25 text-dark;
 	}
 
 	.form-input {
-		@apply w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors;
+		@apply w-full px-5 py-2 border border-gray rounded-2xl text-dark text-sm transition-colors outline-offset-0 outline-transparent outline-1 hover:border-accent focus:outline-accent focus:border-accent;
 		min-height: 48px;
+	}
+
+
+	.form-checkbox {
+		input[type="checkbox"] {
+			@apply hidden;
+			+ label {
+				@apply block w-fit cursor-pointer select-none text-sm  text-dark font-medium pl-6.25 relative lg:text-base lg:leading-6;
+				&::before {
+					@apply content-[''] absolute top-0.5 left-0 border border-border rounded-[1px] w-4 h-4 lg:top-1;
+				}
+			}
+			&:checked {
+				+ label {
+					&::before {
+						@apply bg-[url('/assets/icons/checkbox.svg')] bg-no-repeat bg-center;
+					}
+				}
+			}
+		}
 	}
 
 
 	/* Form search */
 
 	.form-search__input {
-		@apply outline-1 outline-transparent rounded-full border border-1 border-accent text-xs text-dark py-2.5 pl-3.5 pr-14 transition-colors outline-offset-0 focus:outline-1 focus:outline-accent hover:border-accent md:text-sm md:border-2 md:pl-4.5 md:pr-18;
+		@apply rounded-full border border-accent text-xs text-dark py-2.75 pl-3.5 pr-14 transition-colors outline-offset-0 outline-1 outline-transparent focus:outline-accent hover:border-accent md:text-sm md:border-2 md:pl-4.5 md:pr-18;
 		&::-webkit-search-cancel-button {
 			@apply hidden appearance-none;
 		}

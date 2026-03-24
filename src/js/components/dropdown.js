@@ -1,3 +1,5 @@
+import { scheduleIdle } from '../utils/scheduleIdle.js';
+
 export function initDropdowns() {
     document.querySelectorAll('[data-dropdown]').forEach(initDropdown);
 }
@@ -29,7 +31,7 @@ function initDropdown(container) {
         close();
         trigger.focus();
 
-        requestIdleCallback(() => {
+        scheduleIdle(() => {
             container.dispatchEvent(new CustomEvent('dropdown:change', {
                 detail: { value: option.dataset.value },
             }));

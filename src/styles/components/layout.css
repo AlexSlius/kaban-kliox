@@ -27,4 +27,31 @@
 		@apply pt-4 pb-7.5 md:pt-5 md:pb-15;
 	}
 
+
+	/* Order summary */
+
+	.order-summary {
+		@apply bg-white rounded-[15px] px-5 py-4 mb-7.5;
+	}
+
+	.order-summary__row {
+		@apply flex justify-between items-baseline gap-2 mb-2.75;
+	}
+
+	.order-summary__row--last {
+		@apply mb-0;
+	}
+
+	.order-summary__label {
+		@apply text-dark;
+	}
+
+	.order-summary__dots {
+		@apply border-b border-dashed border-b-border grow;
+	}
+
+	.order-summary__value {
+		@apply font-semibold text-dark text-right;
+	}
+
 }

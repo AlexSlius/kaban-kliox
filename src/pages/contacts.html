@@ -6,59 +6,57 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Контакти — Kaban</title>
 	<meta content="Зв'яжіться з нами: телефон, email, адреса офісу. Працюємо щодня з 9:00 до 21:00." name="description">
-	<link href="https://techshop.ua/contacts" rel="canonical">
+	<link href="https://kaban.com/contacts" rel="canonical">
 
-	<!-- Critical CSS inline — above-the-fold стилі -->
-	<style>
-		*,
-		*::before,
-		*::after {
-			box-sizing: border-box;
-		}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Головна",
+						"item": "https://kaban.com/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Контакти"
+					}
+				]
+			},
+			{
+				"@type": "Organization",
+				"name": "Kaban",
+				"url": "https://kaban.com",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://kaban.com/assets/images/logo.svg"
+				},
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+380-95-895-50-51",
+					"contactType": "customer service",
+					"areaServed": "UA",
+					"availableLanguage": "Ukrainian"
+				}
+			}
+		]
+	}
+	</script>
 
-		html {
-			overflow-x: hidden;
-		}
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
 
-		body {
-			margin: 0;
-			font-family: 'Inter', system-ui, -apple-system, sans-serif;
-			color: #1f2937;
-		}
+	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
 
-		.skip-link {
-			position: absolute;
-			top: -40px;
-			left: 0;
-			background: #111827;
-			color: #fff;
-			padding: 8px 16px;
-			z-index: 9999;
-			font-size: 0.875rem;
-			font-weight: 500;
-			transition: top 0.2s;
-		}
-
-		.skip-link:focus {
-			top: 0;
-		}
-
-		header {
-			position: sticky;
-			top: 0;
-			z-index: 40;
-			background: #fff;
-			border-bottom: 1px solid #e5e7eb;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-		}
-
-		.container {
-			width: 100%;
-			padding: 0 1rem;
-			margin: 0 auto;
-			max-width: 80rem;
-		}
-	</style>
 
 	<link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -71,119 +69,132 @@
 
 	<main class="flex-1" id="main-content">
 
-		<!-- Page header -->
-		<div class="bg-blue-600 text-white py-12 md:py-16">
-			<div class="container mx-auto px-4 max-w-7xl">
-				<nav aria-label="Breadcrumb" class="mb-4">
-					<ol class="flex items-center gap-2 text-sm text-blue-200 list-none p-0 m-0">
-						<li><a class="hover:text-white transition-colors" href="/">Головна</a></li>
-						<li aria-hidden="true" class="text-blue-300">/</li>
-						<li aria-current="page" class="text-white font-medium">Контакти</li>
+		<div class="page-wrapper">
+			<div class="container">
+				<nav aria-label="Breadcrumb">
+					<ol class="breadcrumb lg:mb-10">
+						<li><a href="/" class="breadcrumb__link">Головна</a></li>
+						<li class="breadcrumb__separator" aria-hidden="true">/</li>
+						<li aria-current="page" class="breadcrumb__current">Контакти</li>
 					</ol>
 				</nav>
-				<h1 class="text-3xl font-extrabold md:text-4xl">Контакти</h1>
-				<p class="text-blue-100 mt-3 text-lg max-w-xl">Зв'яжіться з нами зручним для вас способом</p>
-			</div>
-		</div>
-
-		<article class="container mx-auto px-4 max-w-7xl py-12 md:py-16">
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-
-				<!-- Контактна інформація -->
-				<aside aria-label="Контактна інформація">
-
-					<section aria-labelledby="contact-info-heading" class="mb-10">
-						<h2 class="section-heading mb-6" id="contact-info-heading">Як з нами зв'язатися</h2>
-
-						<ul class="flex flex-col gap-5 list-none p-0 m-0">
-
-							<li class="flex items-start gap-4">
-								<div
-									class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="#2563eb"
-										stroke-width="2" viewBox="0 0 24 24" width="18">
-										<path
-											d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-										<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-									</svg>
-								</div>
-								<div>
-									<p class="font-semibold text-gray-900 text-sm mb-0.5">Адреса</p>
-									<address class="not-italic text-gray-600 text-sm leading-relaxed">
-										вул. Хрещатик, 22<br>
-										м. Київ, 01001
-									</address>
-								</div>
-							</li>
-
-							<li class="flex items-start gap-4">
-								<div
-									class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="#2563eb"
-										stroke-width="2" viewBox="0 0 24 24" width="18">
-										<path
-											d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-									</svg>
-								</div>
-								<div>
-									<p class="font-semibold text-gray-900 text-sm mb-0.5">Телефон</p>
-									<a class="text-blue-600 hover:text-blue-700 text-sm transition-colors"
-										href="tel:+380441234567">+38 (044) 123-45-67</a>
-								</div>
-							</li>
-
-							<li class="flex items-start gap-4">
-								<div
-									class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="#2563eb"
-										stroke-width="2" viewBox="0 0 24 24" width="18">
-										<path
-											d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-									</svg>
-								</div>
-								<div>
-									<p class="font-semibold text-gray-900 text-sm mb-0.5">Email</p>
-									<a class="text-blue-600 hover:text-blue-700 text-sm transition-colors"
-										href="mailto:info@techshop.ua">info@techshop.ua</a>
-								</div>
-							</li>
-
-							<li class="flex items-start gap-4">
-								<div
-									class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-									<svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="#2563eb"
-										stroke-width="2" viewBox="0 0 24 24" width="18">
-										<circle cx="12" cy="12" r="10" />
-										<polyline points="12,6 12,12 16,14" />
-									</svg>
-								</div>
-								<div>
-									<p class="font-semibold text-gray-900 text-sm mb-0.5">Графік роботи</p>
-									<p class="text-gray-600 text-sm">Пн–Нд: 09:00–21:00</p>
-								</div>
-							</li>
-
-						</ul>
-					</section>
-
-					<section aria-labelledby="map-heading" class="below-fold-section">
-						<h2 class="text-lg font-semibold text-gray-900 mb-4" id="map-heading">На карті</h2>
-						<div aria-label="Карта розташування офісу Kaban, вул. Хрещатик 22, Київ"
-							class="rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-400 text-sm font-medium"
-							role="img" style="height: 240px;">
-							Карта — вул. Хрещатик, 22, Київ
-						</div>
-					</section>
-
-				</aside>
-
-				<!-- Форма контакту -->
 				<div>
-					{{> contact-form}}
-				</div>
+					<div class="section-label mb-3.75">Контакти</div>
+					<h1 class="h1 pb-5 mb-5 border-b border-b-border md:max-w-[700px] lg:max-w-[900px] lg:pb-10 lg:mb-10">
+						Звертайтеся до нас з
+						будь-якими
+						питаннями чи
+						пропозиціями.</h1>
+					<div class="grid grid-cols-1 gap-10 lg:grid-cols-12">
 
+						<!-- Контактна інформація -->
+						<aside aria-label="Контактна інформація" class="lg:col-span-7">
+
+							<section aria-labelledby="contact-info-heading">
+								<h2 class="h2 mb-5 md:mb-10" id="contact-info-heading">Контактна інформація</h2>
+								<div class="grid grid-cols-1 gap-6 mb-5 md:grid-cols-2 md:mb-10 lg:gap-y-12 lg:mb-21">
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-1.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Відділ роботи
+												з клієнтами
+											</div>
+											<a href="tel:+380958955051"
+												class="flex w-fit text-xs transition-colors hover:text-accent lg:text-sm lg:leading-4.25">+38(095)895-50-51</a>
+											<div class="text-xs mt-1.25 lg:text-sm lg:leading-4.25">Є Viber</div>
+										</div>
+									</div>
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-2.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Графік роботи
+											</div>
+											<div class="text-xs lg:text-sm lg:leading-4.25">Обробка замовлень за телефоном:</div>
+											<div class="text-xs mt-1.25 lg:text-sm lg:leading-4.25">10:00 - 16:00</div>
+										</div>
+									</div>
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-3.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Офіс
+											</div>
+											<div class="text-xs lg:text-sm lg:leading-4.25">вул. Космонавтів, 32, офіс 6010</div>
+										</div>
+									</div>
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-4.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Email
+											</div>
+											<a href="mailto:prostotehnika@gmail.com"
+												class="flex w-fit text-xs transition-colors hover:text-accent lg:text-sm lg:leading-4.25">prostotehnika@gmail.com</a>
+										</div>
+									</div>
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-5.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Прийом
+												замовлень на сайті
+											</div>
+											<div class="text-xs lg:text-sm lg:leading-4.25">Цілодобово</div>
+										</div>
+									</div>
+									<div class="flex gap-3.75 items-start">
+										<div class="w-13 h-13 shrink-0">
+											<img src="/assets/icons/contacts-icon-6.svg" alt="" role="presentation" width="52"
+												height="52">
+										</div>
+										<div>
+											<div class="text-dark mb-2.5 leading-4.25 font-semibold lg:leading-4.75">Instagram
+											</div>
+											<a href="https://instagram.com/kaban.com.ua"
+												class="flex w-fit text-xs transition-colors hover:text-accent lg:text-sm lg:leading-4.25">@kaban.com.ua</a>
+										</div>
+									</div>
+								</div>
+								<p class="text-dark mb-5 lg:max-w-[700px]">Відправка замовлень кур’єрською службою здійснюється
+									<b class="font-semibold">Понеділок, Вівторок, Четвер,
+										Субота</b> (за
+									умови оформлення замовлення за день до відправки).
+								</p>
+								<p class="text-dark lg:max-w-[700px]"><b class="font-semibold">Доставка по м. Одеса проводиться
+										Середа, П’ятниця,
+										Неділя з 11:00 до 16:00.</b></p>
+							</section>
+
+						</aside>
+
+						<!-- Форма контакту -->
+						<div class="lg:col-span-5">
+							{{> contact-form}}
+						</div>
+
+					</div>
+					<div class="mt-5 lg:mt-10 below-fold-section">
+						<iframe class="block w-full rounded-[15px] border-none md:h-[544px]"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.901338848863!2d30.712986744919093!3d46.43083507261884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a7b20ed43b%3A0xfaab4e45d64743a!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiwgMzIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1774169199974!5m2!1sru!2sua"
+							title="Карта розташування офісу" width="600" height="350" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
 			</div>
-		</article>
+
+		</div>
 
 	</main>
 

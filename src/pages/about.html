@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Про нас — Kaban</title>
+	<meta
+		content="Дізнайтеся більше про інтернет-магазин Kaban: наша команда, склад, принципи роботи та відповіді на часті запитання."
+		name="description">
+	<link href="https://kaban.com/about" rel="canonical">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Головна",
+						"item": "https://kaban.com/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Про нас",
+				"item": "https://kaban.com/about"
+					}
+				]
+			},
+			{
+				"@type": "Organization",
+				"name": "Kaban",
+				"url": "https://kaban.com",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://kaban.com/assets/images/logo.svg"
+				},
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+380-95-895-50-51",
+					"contactType": "customer service",
+					"areaServed": "UA",
+					"availableLanguage": "Ukrainian"
+				}
+			}
+		]
+	}
+	</script>
+
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
+
+	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
+
+
+	<link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-body pb-12.75 md:pb-15.5 lg:pb-0">
+
+	<a class="skip-link" href="#main-content">Перейти до основного контенту</a>
+
+	{{> header}}
+
+	<main class="flex-1" id="main-content">
+
+		<div class="page-wrapper">
+			<div class="container">
+				<nav aria-label="Breadcrumb">
+					<ol class="breadcrumb">
+						<li><a href="/" class="breadcrumb__link">Головна</a></li>
+						<li class="breadcrumb__separator" aria-hidden="true">/</li>
+						<li aria-current="page" class="breadcrumb__current">Про нас</li>
+					</ol>
+				</nav>
+				<div class="mb-7.5 md:mb-0 md:flex md:items-center md:gap-4">
+					<div class="md:w-[60%]">
+						<div class="section-label mb-3.75">Про нас</div>
+						<h1 class="h1 mb-5 lg:mb-7.5">
+							KABAN — це інтернет-магазин техніки та аксесуарів для дому. </h1>
+						<p class="text-base text-dark lg:text-xl lg:leading-[1.4]">Ми працюємо, щоб ви могли швидко знайти
+							потрібний товар,
+							отримати <br>
+							чесну
+							ціну та
+							сервіс, якому можна
+							довіряти.</p>
+					</div>
+					<div class="md:w-[40%]">
+						<picture>
+							<source type="image/webp" srcset="/assets/images/about-man.webp">
+							<img src="/assets/images/about-man.png" width="314" height="394"
+								alt="Команда Kaban — інтернет-магазин техніки та аксесуарів" fetchpriority="high"
+								class="hidden md:block md:mx-auto">
+						</picture>
+					</div>
+				</div>
+				<div class="mb-7.5 lg:mb-15">
+					{{> features}}
+				</div>
+				<section class="below-fold-section mb-7.5 lg:mb-15 " aria-labelledby="team-title">
+					<div class="section-title pb-3.75 mb-5">
+						<h2 class="h2" id="team-title">Наша команда</h2>
+					</div>
+					<p class="mb-5">Ми команда, яка щодня працює над вашим комфортом.</p>
+					<div class="grid gap-5 md:grid-cols-2 md:gap-y-7.5 lg:grid-cols-4 lg:gap-7.5">
+						<div class="team-card">
+							<div class="team-card__img">
+								<picture>
+									<source type="image/webp" srcset="/assets/images/team-1.webp">
+									<img src="/assets/images/team-1.jpg" width="325" height="367"
+										alt="Олександр — Менеджер продажів" loading="lazy" decoding="async">
+								</picture>
+							</div>
+							<div class="team-card__content">
+								<div class="team-card__name">Олександр</div>
+								<div class="team-card__job">Менеджер продажів</div>
+							</div>
+						</div>
+						<div class="team-card">
+							<div class="team-card__img">
+								<picture>
+									<source type="image/webp" srcset="/assets/images/team-2.webp">
+									<img src="/assets/images/team-2.jpg" width="325" height="367" alt="Ірина — Служба підтримки"
+										loading="lazy" decoding="async">
+								</picture>
+							</div>
+							<div class="team-card__content">
+								<div class="team-card__name">Ірина</div>
+								<div class="team-card__job">Служба підтримки</div>
+							</div>
+						</div>
+						<div class="team-card">
+							<div class="team-card__img">
+								<picture>
+									<source type="image/webp" srcset="/assets/images/team-3.webp">
+									<img src="/assets/images/team-3.jpg" width="325" height="367" alt="Максим — Логістика"
+										loading="lazy" decoding="async">
+								</picture>
+							</div>
+							<div class="team-card__content">
+								<div class="team-card__name">Максим</div>
+								<div class="team-card__job">Логістика</div>
+							</div>
+						</div>
+						<div class="team-card">
+							<div class="team-card__img">
+								<picture>
+									<source type="image/webp" srcset="/assets/images/team-4.webp">
+									<img src="/assets/images/team-4.jpg" width="325" height="367" alt="Марія — Контроль якості"
+										loading="lazy" decoding="async">
+								</picture>
+							</div>
+							<div class="team-card__content">
+								<div class="team-card__name">Марія</div>
+								<div class="team-card__job">Контроль якості</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="below-fold-section mb-7.5 lg:mb-15 bg-white px-5 py-5 rounded-[5px] md:px-7.5 md:py-7.5 lg:rounded-[15px]">
+					<div class="grid gap-5 md:grid-cols-2 lg:gap-7.5">
+						<picture>
+							<source type="image/webp" srcset="/assets/images/about-img.webp">
+							<img src="/assets/images/about-img.jpg" width="650" height="398"
+								alt="Склад інтернет-магазину Kaban" loading="lazy" decoding="async"
+								class="rounded-[5px] aspect-16/10 object-cover h-full w-full">
+						</picture>
+						<div class="post self-center">
+							<h2>Наш склад</h2>
+							<p>Ми маємо власний склад, тому більшість товарів завжди є в наявності та готові до швидкої
+								відправки. Це дозволяє нам не чекати поставок від сторонніх партнерів і оперативно обробляти
+								замовлення щодня.</p>
+							<p>
+								Перед відправкою кожен товар проходить перевірку комплектації та якості. Ми уважно пакуємо
+								замовлення, щоб воно приїхало до вас у безпечному та ідеальному стані.</p>
+							<p>
+								Завдяки налагодженій роботі складу та логістики, ви отримуєте свою покупку максимально швидко —
+								зазвичай вже протягом 1–2 днів після оформлення.</p>
+						</div>
+					</div>
+				</section>
+				<section class="below-fold-section mb-7.5 lg:mb-15" aria-labelledby="how-title">
+					<div class="section-title pb-3.75 mb-5">
+						<h2 class="h2" id="how-title">Як ми працюємо</h2>
+					</div>
+					<p class="mb-5">Простий процес замовлення — від кліку до доставки.</p>
+					<div class="grid gap-3 md:grid-cols-2 md:gap-5 lg:grid-cols-4 lg:gap-7.5">
+						<div class="how-card">
+							<div class="how-card__icon">
+								<img src="/assets/icons/icon-order.svg" alt="" role="presentation" width="52" height="52"
+									loading="lazy" decoding="async">
+							</div>
+							<div class="how-card-content">
+								<div class="how-card-title">Оформлення</div>
+								<p>Ви додаєте товар у кошик та залишаєте контактні дані</p>
+							</div>
+						</div>
+						<div class="how-card">
+							<div class="how-card__icon">
+								<img src="/assets/icons/icon-confirmation.svg" alt="" role="presentation" width="52" height="52"
+									loading="lazy" decoding="async">
+							</div>
+							<div class="how-card-content">
+								<div class="how-card-title">Підтвердження</div>
+								<p>Менеджер уточнює деталі та підтверджує замовлення</p>
+							</div>
+						</div>
+						<div class="how-card">
+							<div class="how-card__icon">
+								<img src="/assets/icons/icon-packing.svg" alt="" role="presentation" width="52" height="52"
+									loading="lazy" decoding="async">
+							</div>
+							<div class="how-card-content">
+								<div class="how-card-title">Пакування та відправка</div>
+								<p>Товар швидко пакується та відправляється Новою Поштою</p>
+							</div>
+						</div>
+						<div class="how-card">
+							<div class="how-card__icon">
+								<img src="/assets/icons/icon-delivery.svg" alt="" role="presentation" width="52" height="52"
+									loading="lazy" decoding="async">
+							</div>
+							<div class="how-card-content">
+								<div class="how-card-title">Отримання</div>
+								<p>Ви отримуєте ваше замовлення <br>
+									вже за 1–2 дні</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				{{> faq}}
+
+			</div>
+
+		</div>
+
+	</main>
+
+	{{> footer}}
+
+	<script defer src="/js/main.js" type="module"></script>
+</body>
+
+</html>
