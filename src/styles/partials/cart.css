@@ -1,0 +1,137 @@
+@layer components {
+
+
+	/* Cart */
+
+	.cart {
+		@apply bg-white rounded-[15px] px-4 py-3.75 md:px-5;
+	}
+
+
+	/* Header */
+
+	.cart__header {
+		@apply hidden bg-substrate py-2.5 rounded-[5px] items-center mb-2.5;
+
+		@variant md {
+			@apply grid;
+			grid-template-columns: 130px 80px 1fr 80px 120px 110px;
+		}
+	}
+
+	.cart__header-item {
+		@apply text-sm font-medium text-dark px-3;
+	}
+
+
+	/* Item */
+
+	.cart__item {
+		@apply grid border border-border rounded-[5px] mb-1.25 text-sm leading-4.25;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"num   img"
+			"name  name"
+			"code  code"
+			"qty   total";
+
+		@variant md {
+			grid-template-columns: 130px 80px 1fr 80px 120px 110px;
+			grid-template-areas: none;
+		}
+	}
+
+	.cart__item:last-child {
+		@apply mb-0;
+	}
+
+
+	/* Item boxes */
+
+	.cart__item-box {
+		@apply flex items-center px-3 py-2;
+	}
+
+	.cart__item-box:nth-child(1) {
+		grid-area: num;
+		@apply items-start pt-3;
+
+		@variant md { grid-area: auto; @apply items-center pt-2; }
+	}
+
+	.cart__item-box:nth-child(2) {
+		grid-area: img;
+		@apply justify-end pr-3 pt-3;
+
+		@variant md { grid-area: auto; @apply justify-start pr-3 pt-2; }
+	}
+
+	.cart__item-box:nth-child(3) {
+		grid-area: name;
+		@apply border-t border-border min-w-0;
+
+		@variant md { grid-area: auto; @apply border-none; }
+	}
+
+	.cart__item-box:nth-child(4) {
+		grid-area: code;
+		@apply text-text;
+
+		@variant md { grid-area: auto; @apply text-dark; }
+	}
+
+	.cart__item-box:nth-child(5) {
+		grid-area: qty;
+		@apply border-t border-border pb-3;
+
+		@variant md { grid-area: auto; @apply border-none pb-2; }
+	}
+
+	.cart__item-box:nth-child(6) {
+		grid-area: total;
+		@apply border-t border-border justify-between pb-3;
+
+		@variant md { grid-area: auto; @apply border-none justify-start pb-2; }
+	}
+
+
+	/* Mobile label */
+
+	.cart__item-label {
+		@apply block text-xs text-text leading-none mb-0.5 md:hidden;
+	}
+
+	.cart__item-box:nth-child(2),
+	.cart__item-box:nth-child(4),
+	.cart__item-box:nth-child(5) {
+		@apply flex-col items-start;
+
+		@variant md { @apply flex-row items-center; }
+	}
+
+	/* Box 6 (Сума): лейбл на всю ширину, цена+кнопка на одной строке */
+	.cart__item-box:nth-child(6) {
+		@apply flex-wrap;
+
+		.cart__item-label {
+			@apply w-full mb-0;
+		}
+
+		@variant md { @apply flex-nowrap; }
+	}
+
+
+	/* Item name */
+
+	.cart__item-name {
+		@apply text-dark truncate;
+	}
+
+
+	/* Delete button */
+
+	.cart__item-delete {
+		@apply w-6 h-6  flex justify-center items-center ml-auto p-1 transition-opacity cursor-pointer hover:opacity-60;
+	}
+
+}

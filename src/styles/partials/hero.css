@@ -1,0 +1,38 @@
+@layer components {
+
+	.hero {
+		@apply bg-[url('/assets/images/hero-bg.webp')] bg-no-repeat bg-center bg-cover;
+	}
+
+
+	.hero__item {
+		@apply pt-10 pb-19.25 md:min-h-[377px] md:pt-[80px] md:max-w-[50%] xl:min-h-[475px] xl:pt-[93px];
+		.h2 {
+			@apply text-2xl leading-7.25 tracking-tight xl:text-[46px] xl:leading-[56px] xl:tracking-normal;
+		}
+		p {
+			@apply text-base leading-4.75 text-dark xl:text-lg xl:leading-5.5;
+		}
+		img {
+			@apply w-full mt-2.25 md:m-0 md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:-z-2 md:max-w-[50%] xl:max-w-[783px] xl:max-h-full xl:object-contain xl:right-[5vw];
+		}
+	}
+
+
+	.hero__arrow {
+		@apply hidden xl:block xl:w-12 xl:h-12 xl:flex xl:items-center xl:justify-center xl:absolute xl:top-1/2 xl:-translate-y-1/2 z-2 xl:cursor-pointer xl:transition-colors xl:hover:text-accent;
+	}
+
+	.hero__prev {
+		@apply xl:left-[80px];
+	}
+
+	.hero__next {
+		@apply xl:right-[80px];
+	}
+
+	.hero__pagination {
+		@apply absolute left-1/2 -translate-x-1/2 z-5 bottom-7.5
+	}
+
+}

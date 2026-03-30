@@ -4,12 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Всі категорії — Kaban</title>
-	<meta
-		content="Всі категорії товарів інтернет-магазину Kaban: електроніка, побутова техніка, аксесуари та багато іншого."
+	<title>Kaban — Інтернет-магазин електроніки та побутової техніки</title>
+	<meta content="Kaban — широкий вибір електроніки, побутової техніки та аксесуарів. Швидка доставка по Україні."
 		name="description">
 
-	<link href="https://kaban.com/catalog" rel="canonical">
+	<link href="https://kaban.com/" rel="canonical">
 
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
@@ -20,7 +19,38 @@
 	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
 	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
 
+	<link rel="preload" as="image" href="/assets/images/hero-bg.webp" fetchpriority="high">
+	<link rel="preload" as="image" href="/assets/images/hero-img-1.webp" fetchpriority="high">
+
 	<link rel="stylesheet" href="/styles/main.css">
+
+	<script type="application/ld+json">
+	[
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Kaban",
+			"url": "https://kaban.com/",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://kaban.com/search?q={search_term_string}",
+				"query-input": "required name=search_term_string"
+			}
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Kaban",
+			"url": "https://kaban.com/",
+			"logo": "https://kaban.com/assets/images/logo.webp",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+380-95-895-50-51",
+				"contactType": "customer service"
+			}
+		}
+	]
+	</script>
 
 </head>
 
@@ -32,9 +62,848 @@
 
 	<main class="flex-1" id="main-content">
 
-		<div class="page-wrapper">
-			<div class="container">
+		{{> hero}}
 
+
+		<section class="pt-7.5 pb-7.5 lg:pt-15 lg:pb-18 product">
+			<div class="container">
+				<div class="section-title mb-3.75 xl:mb-7.5">
+					<h2 class="h2">Акційні пропозиції</h2>
+					<div class="slider-nav">
+						<button type="button" class="slider-nav__btn product__prev" aria-label="Попередній слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn product__next" aria-label="Наступний слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper product__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="below-fold-section pb-7.5 lg:pb-15">
+			<div class="container">
+				<div class="section-title mb-3.75 xl:mb-7.5">
+					<h2 class="h2">Топ Категорій</h2>
+					<div class="slider-nav xl:hidden">
+						<button type="button" class="slider-nav__btn cat__prev" aria-label="Попередній слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn cat__next" aria-label="Наступний слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper cat__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide cat__slide">
+							<a href="#" class="cat__card bg-[#e6ebe5]">
+								<div class="cat__card-content">
+									<h3 class="h3">Кишенькові мультиметри</h3>
+									<p>Компактні прилади для швидких вимірювань напруги, струму та опору</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-1.webp">
+									<img src="/assets/images/cat-1.png" width="120" height="114" alt="Кишенькові мультиметри"
+										loading="lazy" decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide">
+							<a href="#" class="cat__card bg-[#cee1eb]">
+								<div class="cat__card-content">
+									<h3 class="h3">DVI-кабель</h3>
+									<p>Надійне підключення моніторів та відеопристроїв</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-2.webp">
+									<img src="/assets/images/cat-2.png" width="120" height="114" alt="DVI-кабель" loading="lazy"
+										decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide">
+							<a href="#" class="cat__card bg-[#ede2d7]">
+								<div class="cat__card-content">
+									<h3 class="h3">Зволожувачі повітря</h3>
+									<p>Оптимальний рівень вологості для комфортного мікроклімату</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-3.webp">
+									<img src="/assets/images/cat-3.png" width="120" height="114" alt="Зволожувачі повітря"
+										loading="lazy" decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide cat__slide--half">
+							<a href="#" class="cat__card bg-[#dfeadf]">
+								<div class="cat__card-content">
+									<h3 class="h3">Муляжі камер</h3>
+									<p>Просте рішення для стримування порушників</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-4.webp">
+									<img src="/assets/images/cat-4.png" width="120" height="114" alt="Муляжі камер"
+										loading="lazy" decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide cat__slide--half">
+							<a href="#" class="cat__card bg-[#e8e0ed]">
+								<div class="cat__card-content">
+									<h3 class="h3">Micro USB</h3>
+									<p>Стандартний роз’єм для живлення і передачі даних</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-5.webp">
+									<img src="/assets/images/cat-5.png" width="120" height="114" alt="Micro USB" loading="lazy"
+										decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide cat__slide--half">
+							<a href="#" class="cat__card bg-[#f1edec]">
+								<div class="cat__card-content">
+									<h3 class="h3">Світлодіодна стрічка</h3>
+									<p>Компактні прилади для швидких вимірювань напруги, струму та опору</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-6.webp">
+									<img src="/assets/images/cat-6.png" width="120" height="114" alt="Світлодіодна стрічка"
+										loading="lazy" decoding="async">
+								</picture>
+							</a>
+						</div>
+						<div class="swiper-slide cat__slide cat__slide--half">
+							<a href="#" class="cat__card bg-[#c8e2f3]">
+								<div class="cat__card-content">
+									<h3 class="h3">Акумулятори для ліхтарів</h3>
+									<p>Компактні прилади для швидких вимірювань напруги, струму та опору</p>
+									<span class="btn btn--orange">До категорії</span>
+								</div>
+								<picture>
+									<source type="image/webp" srcset="/assets/images/cat-7.webp">
+									<img src="/assets/images/cat-7.png" width="120" height="114" alt="Акумулятори для ліхтарів"
+										loading="lazy" decoding="async">
+								</picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="below-fold-section pb-7.5 lg:pb-14 product">
+			<div class="container">
+				<div class="section-title mb-3.75 xl:mb-7.5">
+					<h2 class="h2">Хіт продажу</h2>
+					<div class="slider-nav">
+						<button type="button" class="slider-nav__btn product__prev" aria-label="Попередній слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn product__next" aria-label="Наступний слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper product__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="below-fold-section pb-7 lg:pb-18 product">
+			<div class="container">
+				<div class="section-title mb-3.75 xl:mb-7.5">
+					<h2 class="h2">Новинки</h2>
+					<div class="slider-nav">
+						<button type="button" class="slider-nav__btn product__prev" aria-label="Попередній слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn product__next" aria-label="Наступний слайд">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper product__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+						<div class="swiper-slide">
+							{{> product-card}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="below-fold-section pb-7.5 lg:pb-15">
+			<div class="container">
+				{{> features}}
+			</div>
+		</div>
+
+		<section class="below-fold-section reviews pb-7.5 pt-7.5 lg:pt-15 lg:pb-15 bg-[#e6f1f5]">
+			<div class="container">
+				<div class="section-title mb-3.75 xl:mb-7.5">
+					<h2 class="h2">Відгуки</h2>
+					<div class="slider-nav">
+						<button type="button" class="slider-nav__btn reviews__prev" aria-label="Попередній відгук">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn reviews__next" aria-label="Наступний відгук">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="reviews__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<div class="reviews__card-row mb-5 xl:mb-7.5">
+									<div class="reviews__card-wrap mb-2.5 xl:mb-0">
+										<div class="reviews__card-header">
+											<div class="reviews__card-title">Ліхтар LM 23, 2000 Ліхтар Ліхтар</div>
+											<div class="reviews__card-rate">
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+											</div>
+										</div>
+										<p class="reviews__card-text">Замовляв кабель Micro USB та акумулятори для ліхтаря. Все
+											прийшло
+											швидко, якість відмінна,
+											упаковка акуратна. Дуже зручно, що є багато дрібних корисних товарів в одному магазині.
+										</p>
+									</div>
+									<div class="reviews__gallery-wrap">
+										<div class="reviews__gallery swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="slider-nav__btn reviews__gallery-prev"
+											aria-label="Попередня стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+											</svg>
+										</button>
+										<button type="button" class="slider-nav__btn reviews__gallery-next"
+											aria-label="Наступна стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__card-user">
+									<div class="reviews__card-user-img">O</div>
+									<div class="reviews__card-user-content">
+										<div class="reviews__card-user-name">Олег П.</div>
+										<div class="reviews__card-user-city">(Івано-Франківськ)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<div class="reviews__card-row mb-5 xl:mb-7.5">
+									<div class="reviews__card-wrap mb-2.5 xl:mb-0">
+										<div class="reviews__card-header">
+											<div class="reviews__card-title">Ліхтар LM 23, 2000 Ліхтар Ліхтар</div>
+											<div class="reviews__card-rate">
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+											</div>
+										</div>
+										<p class="reviews__card-text">Замовляв кабель Micro USB та акумулятори для ліхтаря. Все
+											прийшло
+											швидко, якість відмінна,
+											упаковка акуратна. Дуже зручно, що є багато дрібних корисних товарів в одному магазині.
+										</p>
+									</div>
+									<div class="reviews__gallery-wrap">
+										<div class="reviews__gallery swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="slider-nav__btn reviews__gallery-prev"
+											aria-label="Попередня стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+											</svg>
+										</button>
+										<button type="button" class="slider-nav__btn reviews__gallery-next"
+											aria-label="Наступна стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__card-user">
+									<div class="reviews__card-user-img">O</div>
+									<div class="reviews__card-user-content">
+										<div class="reviews__card-user-name">Олег П.</div>
+										<div class="reviews__card-user-city">(Івано-Франківськ)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<div class="reviews__card-row mb-5 xl:mb-7.5">
+									<div class="reviews__card-wrap mb-2.5 xl:mb-0">
+										<div class="reviews__card-header">
+											<div class="reviews__card-title">Ліхтар LM 23, 2000 Ліхтар Ліхтар</div>
+											<div class="reviews__card-rate">
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+											</div>
+										</div>
+										<p class="reviews__card-text">Замовляв кабель Micro USB та акумулятори для ліхтаря. Все
+											прийшло
+											швидко, якість відмінна,
+											упаковка акуратна. Дуже зручно, що є багато дрібних корисних товарів в одному магазині.
+										</p>
+									</div>
+									<div class="reviews__gallery-wrap">
+										<div class="reviews__gallery swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="slider-nav__btn reviews__gallery-prev"
+											aria-label="Попередня стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+											</svg>
+										</button>
+										<button type="button" class="slider-nav__btn reviews__gallery-next"
+											aria-label="Наступна стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__card-user">
+									<div class="reviews__card-user-img">O</div>
+									<div class="reviews__card-user-content">
+										<div class="reviews__card-user-name">Олег П.</div>
+										<div class="reviews__card-user-city">(Івано-Франківськ)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<div class="reviews__card-row mb-5 xl:mb-7.5">
+									<div class="reviews__card-wrap mb-2.5 xl:mb-0">
+										<div class="reviews__card-header">
+											<div class="reviews__card-title">Ліхтар LM 23, 2000 Ліхтар Ліхтар</div>
+											<div class="reviews__card-rate">
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#FFAB00" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+												<svg width="16" height="15" aria-hidden="true" focusable="false" viewBox="0 0 16 15"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M7.6084 0L9.40451 5.52786H15.2169L10.5146 8.94427L12.3107 14.4721L7.6084 11.0557L2.90612 14.4721L4.70223 8.94427L-5.38826e-05 5.52786H5.81229L7.6084 0Z"
+														fill="#b7b7b7" />
+												</svg>
+											</div>
+										</div>
+										<p class="reviews__card-text">Замовляв кабель Micro USB та акумулятори для ліхтаря. Все
+											прийшло
+											швидко, якість відмінна,
+											упаковка акуратна. Дуже зручно, що є багато дрібних корисних товарів в одному магазині.
+										</p>
+									</div>
+									<div class="reviews__gallery-wrap">
+										<div class="reviews__gallery swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" data-fancybox="reviews" class="reviews__gallery-item" aria-label="Переглянути фото відгуку">
+														<picture>
+															<source type="image/webp" srcset="/assets/images/usb-type-c-vs-micro.webp">
+															<img src="/assets/images/usb-type-c-vs-micro.jpg" width="75" height="75"
+																alt="" role="presentation" loading="lazy" decoding="async">
+														</picture>
+													</a>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="slider-nav__btn reviews__gallery-prev"
+											aria-label="Попередня стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+											</svg>
+										</button>
+										<button type="button" class="slider-nav__btn reviews__gallery-next"
+											aria-label="Наступна стаття">
+											<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+												viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="reviews__card-user">
+									<div class="reviews__card-user-img">O</div>
+									<div class="reviews__card-user-content">
+										<div class="reviews__card-user-name">Олег П.</div>
+										<div class="reviews__card-user-city">(Івано-Франківськ)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="below-fold-section blogs pb-7.5 pt-7.5 lg:pt-15 lg:pb-15">
+			<div class="container">
+				<div class="section-title mb-4.5">
+					<h2 class="h2">Корисні статті</h2>
+					<div class="slider-nav">
+						<button type="button" class="slider-nav__btn blogs__prev" aria-label="Попередня стаття">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70703 0.353516L0.70703 5.35351L5.70703 10.3535" />
+							</svg>
+						</button>
+						<button type="button" class="slider-nav__btn blogs__next" aria-label="Наступна стаття">
+							<svg width="7" height="11" aria-hidden="true" focusable="false" stroke="currentColor"
+								viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.353514 10.3535L5.35352 5.35352L0.353515 0.353517" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="blogs__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<picture>
+										<source type="image/webp" srcset="/assets/images/led-strip.webp">
+										<img src="/assets/images/led-strip.jpg" width="444" height="262"
+											alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
+									</picture>
+								</div>
+								<div class="blog-card__content">
+									<time class="blog-card__date" datetime="2026-02-01">01.02.2026</time>
+									<h3 class="blog-card__title">
+										<a href="#">Як вибрати світлодіодну стрічку для дому і не тільки</a>
+									</h3>
+									<p>Дізнайтесь, які бувають LED-стрічки, як правильно підібрати яскравість та блок живлення
+										для
+										підсвітки кімнати, кухні чи меблів.</p>
+									<span class="btn btn--gray blog-card__btn" aria-hidden="true">Читати більше</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<picture>
+										<source type="image/webp" srcset="/assets/images/led-strip.webp">
+										<img src="/assets/images/led-strip.jpg" width="444" height="262"
+											alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
+									</picture>
+								</div>
+								<div class="blog-card__content">
+									<time class="blog-card__date" datetime="2026-02-01">01.02.2026</time>
+									<h3 class="blog-card__title">
+										<a href="#">Як вибрати світлодіодну стрічку для дому і не тільки</a>
+									</h3>
+									<p>Дізнайтесь, які бувають LED-стрічки, як правильно підібрати яскравість та блок живлення
+										для
+										підсвітки кімнати, кухні чи меблів.</p>
+									<span class="btn btn--gray blog-card__btn" aria-hidden="true">Читати більше</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<picture>
+										<source type="image/webp" srcset="/assets/images/led-strip.webp">
+										<img src="/assets/images/led-strip.jpg" width="444" height="262"
+											alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
+									</picture>
+								</div>
+								<div class="blog-card__content">
+									<time class="blog-card__date" datetime="2026-02-01">01.02.2026</time>
+									<h3 class="blog-card__title">
+										<a href="#">Як вибрати світлодіодну стрічку для дому і не тільки</a>
+									</h3>
+									<p>Дізнайтесь, які бувають LED-стрічки, як правильно підібрати яскравість та блок живлення
+										для
+										підсвітки кімнати, кухні чи меблів.</p>
+									<span class="btn btn--gray blog-card__btn" aria-hidden="true">Читати більше</span>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="blog-card">
+								<div class="blog-card__img">
+									<picture>
+										<source type="image/webp" srcset="/assets/images/led-strip.webp">
+										<img src="/assets/images/led-strip.jpg" width="444" height="262"
+											alt="Як вибрати світлодіодну стрічку для дому" loading="lazy" decoding="async">
+									</picture>
+								</div>
+								<div class="blog-card__content">
+									<time class="blog-card__date" datetime="2026-02-01">01.02.2026</time>
+									<h3 class="blog-card__title">
+										<a href="#">Як вибрати світлодіодну стрічку для дому і не тільки</a>
+									</h3>
+									<p>Дізнайтесь, які бувають LED-стрічки, як правильно підібрати яскравість та блок живлення
+										для
+										підсвітки кімнати, кухні чи меблів.</p>
+									<span class="btn btn--gray blog-card__btn" aria-hidden="true">Читати більше</span>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="below-fold-section pb-7.5 lg:pb-15">
+			<div class="container">
+				{{> seo-block}}
 			</div>
 		</div>
 

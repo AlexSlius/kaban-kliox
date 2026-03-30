@@ -1,11 +1,11 @@
 @layer components {
 
-	.features {
-		@apply border border-border rounded-[5px] py-5 px-5 lg:grid lg:grid-cols-4 lg:rounded-[15px] lg:px-0 lg:py-0;
+	.features__row {
+		@apply border border-border rounded-[5px] py-4.5 px-5 lg:grid lg:grid-cols-4 lg:rounded-[15px] lg:px-0 lg:py-0;
 	}
 
 	.features__item {
-		@apply flex items-center gap-3.75 pb-5 mb-5 border-b border-b-border last:pb-0 last:mb-0 last:border-b-0 lg:border-b-0 lg:mb-0 lg:py-7 lg:px-5 lg:border-r lg:border-r-border last:lg:border-r-0 last:lg:pb-7;
+		@apply flex items-center gap-3.75 pb-4.5 mb-5.25 border-b border-b-border last:pb-0 last:mb-0 last:border-b-0 lg:border-b-0 lg:mb-0 lg:py-7 lg:px-5 lg:border-r lg:border-r-border last:lg:border-r-0 last:lg:pb-7;
 	}
 
 

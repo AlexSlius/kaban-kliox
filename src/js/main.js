@@ -1,7 +1,8 @@
+import { initSelect } from './components/select.js';
 import { initDropdowns } from './components/dropdown.js';
 import { initMobileMenu } from './components/mobile-menu.js';
 import { initAccordion } from './components/accordion.js';
-import { initPhoneMask } from './components/phone-mask.js';
+import { initPhoneMask, initQuantity, initReviewUpload } from './components/form.js';
 import { initFavourite } from './components/favourite.js';
 import { initFilter, initFilterSlider } from './components/filter.js';
 import { initModal } from './components/modal.js';
@@ -27,6 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         initPhoneMask();
     }
 
+    // Quantity
+    if (document.querySelector('.quantity')) {
+        initQuantity();
+    }
+
+    // Review upload drag & drop
+    if (document.querySelector('.review-form__upload')) {
+        initReviewUpload();
+    }
+
     // Accordion
     if (document.querySelector('[data-accordion-trigger]')) {
         initAccordion();
@@ -41,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.filter')) {
         initFilter();
         initFilterSlider();
+    }
+
+    // Choices.js selects
+    if (document.querySelector('.js-select, .js-select-delivery')) {
+        initSelect();
     }
 
     // Modal

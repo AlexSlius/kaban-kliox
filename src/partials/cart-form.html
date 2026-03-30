@@ -1,0 +1,93 @@
+<section class="bg-white rounded-[15px] px-5 pt-3.75 pb-8">
+
+	<form action="/" method="post" novalidate aria-label="Форма оформлення замовлення">
+
+		<h2 class="h4 mb-3.75">Контактні дані</h2>
+
+		<div class="mb-2.5">
+			<label class="form-label" for="contact-name">
+				Прізвище та ім'я <span aria-hidden="true" class="text-accent">*</span>
+			</label>
+			<input class="form-input" id="contact-name" name="name" placeholder="Прізвище та ім'я отримувача" required
+				type="text" autocomplete="name">
+		</div>
+
+		<div class="mb-2.5">
+			<label class="form-label" for="contact-phone">
+				Мобільний телефон <span aria-hidden="true" class="text-accent">*</span>
+			</label>
+			<input class="form-input js-phone" id="contact-phone" name="phone" placeholder="+380" required type="text"
+				autocomplete="tel">
+		</div>
+
+		<div class="mb-2.5">
+			<label class="form-label" for="contact-email">Електронна пошта</label>
+			<input class="form-input" id="contact-email" name="email" placeholder="Введіть E-mail" type="email"
+				autocomplete="email">
+		</div>
+
+		<div class="mb-5">
+			<label class="form-label" for="contact-message">Коментар до замовлення</label>
+			<textarea class="form-input" id="contact-message" name="message" rows="4"></textarea>
+		</div>
+
+
+		<h2 class="h4 mb-3.75">Доставка та оплата</h2>
+
+		<div class="mb-2.5">
+			<select class="js-select-delivery" id="delivery-method" name="delivery" aria-label="Спосіб доставки"
+				data-np-icon="true">
+				<option value="np-branch" data-custom-properties='{"image":"/assets/icons/np.webp"}'>Доставка у відділення "Нова пошта"</option>
+				<option value="np-courier" data-custom-properties='{"image":"/assets/icons/np.webp"}'>Кур'єр "Нова пошта"</option>
+				<option value="ukr-poshta">Укрпошта</option>
+				<option value="pickup">Самовивіз</option>
+			</select>
+		</div>
+
+		<div class="mb-2.5">
+			<label class="form-label" for="delivery-city">Місто</label>
+			<select class="js-select" id="delivery-city" name="city" data-placeholder="Оберіть місто">
+				<option value="kyiv">Київ</option>
+				<option value="kharkiv">Харків</option>
+				<option value="dnipro">Дніпро</option>
+				<option value="odesa">Одеса</option>
+				<option value="lviv">Львів</option>
+				<option value="zaporizhzhia">Запоріжжя</option>
+				<option value="kryvyi-rih">Кривий Ріг</option>
+				<option value="mykolaiv">Миколаїв</option>
+				<option value="vinnytsia">Вінниця</option>
+				<option value="poltava">Полтава</option>
+			</select>
+		</div>
+
+		<div class="mb-6">
+			<label class="form-label" for="delivery-branch">Відділення Нової Пошти</label>
+			<select class="js-select" id="delivery-branch" name="branch" data-placeholder="Оберіть відділення">
+				<option value="42">№42 (до 30 кг на одне місце): вул. Старочумацька, 82</option>
+				<option value="1">№1 (до 30 кг на одне місце): вул. Хрещатик, 1</option>
+				<option value="5">№5 (до 30 кг): просп. Перемоги, 12</option>
+				<option value="18">№18 (до 30 кг): вул. Саксаганського, 44</option>
+				<option value="33">№33 (до 30 кг): вул. Велика Васильківська, 100</option>
+			</select>
+		</div>
+
+		<div class="mb-6">
+			<h2 class="h4 mb-3.75">Доставка та оплата</h2>
+			<div class="form-radio mb-2.5">
+				<input type="radio" id="pays-1" name="pays" checked>
+				<label for="pays-1">Оплата готівкою</label>
+			</div>
+			<div class="form-radio mb-2.5">
+				<input type="radio" id="pays-2" name="pays">
+				<label for="pays-2">Безготівкова оплата</label>
+			</div>
+			<div class="form-radio">
+				<input type="radio" id="pays-3" name="pays">
+				<label for="pays-3">Оплата під час отримання товару</label>
+			</div>
+		</div>
+
+		<button class="btn btn--orange w-full" type="submit">Замовлення підтверджую</button>
+
+	</form>
+</section>

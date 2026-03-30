@@ -4,6 +4,10 @@
 
 @import "@fancyapps/ui/dist/fancybox/fancybox.css" layer(base);
 @import "nouislider/dist/nouislider.css" layer(base);
+@import "choices.js/public/assets/styles/choices.min.css" layer(base);
+@import "swiper/css" layer(base);
+@import "swiper/css/navigation" layer(base);
+@import "swiper/css/pagination" layer(base);
 
 @import "./partials/header.css";
 @import "./partials/footer.css";
@@ -12,6 +16,10 @@
 @import "./partials/category.css";
 @import "./partials/filter.css";
 @import "./partials/features.css";
+@import "./partials/cart.css";
+@import "./partials/hero.css";
+@import "./partials/product.css";
+@import "./partials/compare.css";
 
 @import "./components/buttons.css";
 @import "./components/cards.css";

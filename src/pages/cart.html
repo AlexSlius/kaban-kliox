@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Кошик — Kaban</title>
+	<meta
+		content="Кошик покупця інтернет-магазину Kaban. Перегляньте обрані товари, змініть кількість та оформіть замовлення."
+		name="description">
+
+	<link href="https://kaban.com/cart" rel="canonical">
+
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="">
+
+	<link rel="preload" as="font" href="/assets/fonts/InterRegular.woff2" type="font/woff2" crossorigin>
+	<link rel="preload" as="font" href="/assets/fonts/InterSemiBold.woff2" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="/styles/main.css">
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Головна",
+				"item": "https://kaban.com/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Кошик",
+				"item": "https://kaban.com/cart"
+			}
+		]
+	}
+	</script>
+
+</head>
+
+<body class="min-h-screen flex flex-col bg-body pb-12.75 md:pb-15.5 lg:pb-0">
+
+	<a class="skip-link" href="#main-content">Перейти до основного контенту</a>
+
+	{{> header}}
+
+	<main class="flex-1" id="main-content">
+
+		<div class="page-wrapper">
+			<div class="container">
+				<nav aria-label="Breadcrumb">
+					<ol class="breadcrumb">
+						<li><a href="/" class="breadcrumb__link">Головна</a></li>
+						<li class="breadcrumb__separator" aria-hidden="true">/</li>
+						<li aria-current="page" class="breadcrumb__current">Кошик</li>
+					</ol>
+				</nav>
+				<div class="grid gap-5 md:grid-cols-12">
+					<div class="col-span-12 lg:col-span-8 xl:col-span-7">
+						<div class="cart mb-5">
+							<h1 class="h4 mb-3.75">Кошик (3 товара)</h1>
+							<div class="cart__header mb-2.5">
+								<div class="cart__header-item">№</div>
+								<div class="cart__header-item">Код</div>
+								<div class="cart__header-item">Назва</div>
+								<div class="cart__header-item">Ціна</div>
+								<div class="cart__header-item">Кількість</div>
+								<div class="cart__header-item">Сума</div>
+							</div>
+							<div class="cart__box">
+								<div class="cart__item mb-1.25">
+									<div class="cart__item-box">
+										<div class="flex items-center gap-5">
+											<div class="text-dark">1</div>
+											<picture class="shrink-0">
+												<source type="image/webp" srcset="/assets/images/cart.webp">
+												<img src="/assets/images/cart.png" width="84" height="59"
+													alt="ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)" loading="lazy" decoding="async"
+													class="rounded-[5px]">
+											</picture>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Код</span>
+										<div>415068</div>
+									</div>
+									<div class="cart__item-box">
+										<div class="cart__item-name">ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Ціна</span>
+										<div class="text-dark">12.000 ₴</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Кількість</span>
+										<div class="quantity">
+											<button type="button" class="quantity__arrow" aria-label="Зменшити кількість"><svg
+													aria-hidden="true" focusable="false" width="10" height="2" viewBox="0 0 10 2"
+													fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 2V0H10V2H0Z" />
+												</svg>
+											</button>
+											<input type="number" value="99">
+											<button type="button" class="quantity__arrow" aria-label="Збільшити кількість"><svg
+													aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
+													viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.15152 10V0H5.84848V10H4.15152ZM0 5.84848V4.15152H10V5.84848H0Z" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Сума</span>
+										<div class="text-dark">12.000 ₴</div>
+										<button type="button" class="cart__item-delete text-danger">
+											<svg aria-hidden="true" focusable="false" stroke="currentColor" width="11" height="11"
+												viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.707031 0.707031L9.70703 9.70703M0.707031 9.70703L9.70703 0.707031"
+													stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="cart__item mb-1.25">
+									<div class="cart__item-box">
+										<div class="flex items-center gap-5">
+											<div class="text-dark">2</div>
+											<picture class="shrink-0">
+												<source type="image/webp" srcset="/assets/images/cart.webp">
+												<img src="/assets/images/cart.png" width="84" height="59"
+													alt="ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)" loading="lazy" decoding="async"
+													class="rounded-[5px]">
+											</picture>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Код</span>
+										<div>415068</div>
+									</div>
+									<div class="cart__item-box">
+										<div class="cart__item-name">ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Ціна</span>
+										<div class="text-dark">12.000 ₴</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Кількість</span>
+										<div class="quantity">
+											<button type="button" class="quantity__arrow" aria-label="Зменшити кількість"><svg
+													aria-hidden="true" focusable="false" width="10" height="2" viewBox="0 0 10 2"
+													fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 2V0H10V2H0Z" />
+												</svg>
+											</button>
+											<input type="number" value="99">
+											<button type="button" class="quantity__arrow" aria-label="Збільшити кількість"><svg
+													aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
+													viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.15152 10V0H5.84848V10H4.15152ZM0 5.84848V4.15152H10V5.84848H0Z" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Сума</span>
+										<div class="text-dark">12.000 ₴</div>
+										<button type="button" class="cart__item-delete text-danger">
+											<svg aria-hidden="true" focusable="false" stroke="currentColor" width="11" height="11"
+												viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.707031 0.707031L9.70703 9.70703M0.707031 9.70703L9.70703 0.707031"
+													stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="cart__item">
+									<div class="cart__item-box">
+										<div class="flex items-center gap-5">
+											<div class="text-dark">3</div>
+											<picture class="shrink-0">
+												<source type="image/webp" srcset="/assets/images/cart.webp">
+												<img src="/assets/images/cart.png" width="84" height="59"
+													alt="ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)" loading="lazy" decoding="async"
+													class="rounded-[5px]">
+											</picture>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Код</span>
+										<div>415068</div>
+									</div>
+									<div class="cart__item-box">
+										<div class="cart__item-name">ТБ SMART ANDROID 15 56 дюйм (1/8 Gb)</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Ціна</span>
+										<div class="text-dark">12.000 ₴</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Кількість</span>
+										<div class="quantity">
+											<button type="button" class="quantity__arrow" aria-label="Зменшити кількість"><svg
+													aria-hidden="true" focusable="false" width="10" height="2" viewBox="0 0 10 2"
+													fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 2V0H10V2H0Z" />
+												</svg>
+											</button>
+											<input type="number" value="99">
+											<button type="button" class="quantity__arrow" aria-label="Збільшити кількість"><svg
+													aria-hidden="true" focusable="false" fill="currentColor" width="10" height="10"
+													viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+													<path d="M4.15152 10V0H5.84848V10H4.15152ZM0 5.84848V4.15152H10V5.84848H0Z" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="cart__item-box">
+										<span class="cart__item-label">Сума</span>
+										<div class="text-dark">12.000 ₴</div>
+										<button type="button" class="cart__item-delete text-danger">
+											<svg aria-hidden="true" focusable="false" stroke="currentColor" width="11" height="11"
+												viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.707031 0.707031L9.70703 9.70703M0.707031 9.70703L9.70703 0.707031"
+													stroke-width="2" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="order-summary mb-5 lg:mb-7.5">
+							<div class="order-summary__row">
+								<div class="order-summary__label">Сума замовлення</div>
+								<div class="order-summary__dots"></div>
+								<div class="order-summary__value font-normal">36.000 ₴</div>
+							</div>
+							<div class="order-summary__row">
+								<div class="order-summary__label">Доставка</div>
+								<div class="order-summary__dots"></div>
+								<div class="order-summary__value font-normal">За тарифами перевізника</div>
+							</div>
+							<div class="order-summary__row">
+								<div class="order-summary__label font-semibold">Загальна сума замовлення</div>
+								<div class="order-summary__dots"></div>
+								<div class="order-summary__value">До сплати: 36.000 ₴</div>
+							</div>
+						</div>
+						<form action="/" class="promocode lg:max-w-[452px]" aria-label="Форма промокоду">
+							<input type="text" class="form-input" placeholder="Введіть промокод">
+							<button type="submit" class="btn btn--orange">Застосувати</button>
+						</form>
+					</div>
+					<div class="col-span-12 lg:col-span-4 xl:col-span-5">
+						{{> cart-form}}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	{{> footer}}
+
+	<script defer src="/js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -9,7 +9,12 @@
 	}
 
 	.h3 {
-		@apply text-dark text-base font-medium lg:text-xl lg:leading-6;
+		@apply text-dark text-base leading-4.75 font-medium lg:text-xl lg:leading-6;
+	}
+
+
+	.h4 {
+		@apply text-dark text-base font-semibold leading-4.75;
 	}
 
 
@@ -21,11 +26,11 @@
 
 
 	.section-title {
-		@apply border-b border-b-border flex justify-between items-center gap-3;
+		@apply border-b border-b-border flex justify-between items-center gap-3 pb-3.75 xl:pb-5;
 		.h2 {
 			@apply relative; 
 			&::before {
-				@apply content-[''] bg-accent w-full absolute h-0.5 left-0 -bottom-4;
+				@apply content-[''] bg-accent w-full absolute h-0.5 left-0 -bottom-4 xl:-bottom-5.25;
 			}
 		}
 	}
