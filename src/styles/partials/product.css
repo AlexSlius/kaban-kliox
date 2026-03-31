@@ -62,7 +62,7 @@
 
 
 	.product-gallery {
-		@apply lg:w-[50%] xl:w-[44.2%];
+		@apply lg:w-[50%] xl:w-[44.2%] xl:shrink-0;
 	}
 
 	.product-gallery__slider {
@@ -75,6 +75,19 @@
 		.swiper-slide-thumb-active {
 			.product-gallery__thumb-item {
 				@apply border-accent;
+			}
+		}
+		&:not(.swiper-initialized){
+			@variant lg {
+				.swiper-slide {
+					width: calc(25% - 7.5px);
+					margin-right: 10px;
+				}
+			}
+			@variant xl {
+				.swiper-slide {
+					width: calc(20% - 8px);
+				}
 			}
 		}
 	}
